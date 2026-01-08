@@ -413,7 +413,7 @@ export const specialitesList: specialite[] = [
   {
     id: 1,
     url: '#',
-    src: '/img/RADIOLOGIE.JPEG',
+    src: '/img/RADIOLOGY.PNG',
     title: 'Radiologie',
     description: 'Interventions pour corriger les maladies du cœur et des vaisseaux.',
   },

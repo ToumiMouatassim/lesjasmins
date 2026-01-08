@@ -32,7 +32,7 @@ const Services = () => {
                 )}
 
                 <div className="specialite-overlay">
-                  {/* <h3 className="specialite-title text-white">{item.title}</h3> */}
+                  <h3 className="specialite-title text-white">{item.title}</h3>
 
                   <Link href="/rendez-vous" className="btn-rdv">
                     rendez-vous

@@ -6,10 +6,10 @@ const nextConfig: NextConfig = {
 
   serverExternalPackages: ["@heroui/react", "@heroui/theme"],
 
-  i18n: {
-    locales: ["fr", "ar"],
-    defaultLocale: "fr",
-  },
+  // i18n: {
+  //   locales: ["fr", "ar"],
+  //   defaultLocale: "fr",
+  // },
 
   
 
