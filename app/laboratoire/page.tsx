@@ -1,36 +1,193 @@
 "use client";
-export default function LaboratoirePage() {
+
+import React, { Fragment, useMemo } from "react";
+import { Carousel } from "react-bootstrap";
+import NextLink from "../components/NextLink";
+import Image from "next/image";
+
+const LaboratoirePage: React.FC = () => {
+  const specialities = [
+    "Biochimie",
+    "Chimie analytique",
+    "Dépistage néonatal",
+    "Infectiologie",
+    "Immunologie",
+    "Allergologie",
+    "Hématologie",
+    "Génétique médicale",
+    "Cytogénétique",
+    "Histocompatibilité",
+    "Cytométrie en flux",
+  ];
+
+  const values = [
+    { title: "ADN", desc: "Au service exclusif des laboratoires partenaires." },
+    { title: "Innovation", desc: "Toujours à la pointe de la technologie." },
+    { title: "Excellence", desc: "Mutualisation de nos expertises." },
+    { title: "Respect", desc: "Respect total envers tous nos partenaires." },
+    { title: "Éthique", desc: "Protection des données et qualité médicale." },
+  ];
+
   return (
-    <main className="min-h-screen p-8 bg-gray-950 text-white">
-      <h1 className="text-3xl font-bold mb-4">Laboratoire</h1>
-
-      <p className="text-gray-300 mb-6">
-        Bienvenue dans le laboratoire. Vous trouverez ici les analyses médicales
-        et les services disponibles.
-      </p>
-
-      <div className="grid gap-6 md:grid-cols-3">
-        <div className="p-6 bg-gray-900 rounded-xl shadow">
-          <h2 className="text-xl font-semibold mb-2">Analyse sanguine</h2>
-          <p className="text-gray-400">
-            Résultats rapides et fiables.
+    <Fragment>
+      {/* Hero */}
+      <section className="breadcrumb-hero position-relative d-flex align-items-center justify-content-center" style={{
+        height: '50vh',
+        minHeight: '150px',
+        backgroundImage: 'url(/img/aboutbg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        zIndex: 999,
+        paddingTop: '120px',
+      }}>
+        <div className="overlay position-absolute w-100" style={{
+          background: 'linear-gradient(135deg, rgba(0,0,0,0.6), rgba(21,99,171,0.6))',
+          top: 0,
+          bottom: 0,
+          zIndex: 2
+        }}></div>
+        <div className="container text-center position-relative pt-10" style={{ zIndex: 3 }}>
+          <h1 className="fs-48 text-white mb-3 animate__animated animate__fadeInDown">Laboratoire</h1>
+          <p className="mt-2 text-white fs-18 animate__animated animate__fadeInUp animate__delay-1s">
+            Découvrez le Laboratoire Les Jasmins d’Analyses Médicales et nos services.
           </p>
         </div>
+      </section>
 
-        <div className="p-6 bg-gray-900 rounded-xl shadow">
-          <h2 className="text-xl font-semibold mb-2">Tests PCR</h2>
-          <p className="text-gray-400">
-            Dépistage et diagnostics.
-          </p>
-        </div>
+      <main className="content-wrapper">
+        {/* Mission */}
+        <section className="py-5 section-fade">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 text-center mb-4 mb-lg-0">
+                <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
+                  <Image
+                    src="/img/missionAbout.PNG"
+                    alt="Notre Mission"
+                    width={700}
+                    height={480}
+                    style={{ width: "100%", height: "220px" }}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="card card-ghost shadow-sm border-0 p-4">
+                  <h2 className="text-primary mb-3">Un laboratoire d&apos;excellence</h2>
+                  <p className="lead mb-3">
+                    Apporter une biologie médicale de qualité et accessible à tous les professionnels de santé, avec rapidité, fiabilité et innovation.
+                  </p>
+                  <ul className="list-unstyled mb-0">
+                    <li className="mb-2">
+                      <i className="uil uil-check text-success me-2"></i>Fiabilité et rapidité des analyses
+                    </li>
+                    <li className="mb-2">
+                      <i className="uil uil-check text-success me-2"></i>Innovation et formation continue
+                    </li>
+                    <li>
+                      <i className="uil uil-check text-success me-2"></i>Engagement pour la souveraineté sanitaire nationale
+                    </li>
+                  </ul>
+                  <div className="mt-4 text-center">
+                    <NextLink href="/services" title="Découvrir nos services" className="btn btn-outline-primary" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className="p-6 bg-gray-900 rounded-xl shadow">
-          <h2 className="text-xl font-semibold mb-2">Radiologie</h2>
-          <p className="text-gray-400">
-            Imagerie médicale moderne.
-          </p>
-        </div>
-      </div>
-    </main>
+        {/* Valeurs */}
+        <section className="py-5 bg-white section-fade">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="card card-ghost shadow-sm border-0 p-4">
+                  <h2 className="text-secondary mb-3">Nos Valeurs</h2>
+                  <ul className="list-unstyled mb-0">
+                    {values.map((v, i) => (
+                      <li key={i} className="mb-2">
+                        <i className="uil uil-check text-success me-2"></i>{v.title} : {v.desc}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 text-center">
+                    <NextLink href="/services" title="Découvrir nos services" className="btn btn-outline-secondary" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 text-center">
+                <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
+                  <Image
+                    src="/img/historyabout.png"
+                    alt="Notre Histoire"
+                    width={700}
+                    height={480}
+                    style={{ width: "100%", height: "250px" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pôles de spécialités */}
+        <section className="py-5 section-fade bg-light text-center">
+          <div className="container">
+            <h2 className="mb-4">Nos pôles de spécialités</h2>
+            <div className="row justify-content-center">
+              {specialities.map((spec, i) => (
+                <div key={i} className="col-6 col-md-4 col-lg-3 mb-3">
+                  <div className="card shadow-sm rounded p-3">{spec}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className="py-5 section-fade text-center">
+          <div className="container">
+            <h2 className="mb-4">Nous contacter</h2>
+            <form className="max-w-2xl mx-auto grid grid-cols-1 gap-4 text-left">
+              <input type="text" placeholder="Nom" className="p-3 border rounded w-full" />
+              <input type="text" placeholder="Prénom" className="p-3 border rounded w-full" />
+              <input type="email" placeholder="Email" className="p-3 border rounded w-full" />
+              <input type="tel" placeholder="Téléphone" className="p-3 border rounded w-full" />
+              <textarea placeholder="Message" className="p-3 border rounded w-full h-32"></textarea>
+              <button className="btn btn-primary w-full">Soumettre</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <style>{`
+        .section-fade {
+          animation: fadeUp 0.7s ease both;
+        }
+
+        @keyframes fadeUp {
+          from {
+            opacity: 0;
+            transform: translateY(14px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .card-ghost {
+          background: #fff;
+          border-radius: 12px;
+        }
+
+        .img-wrap {
+          border-radius: 12px;
+          overflow: hidden;
+        }
+      `}</style>
+    </Fragment>
   );
-}
+};
+
+export default LaboratoirePage;

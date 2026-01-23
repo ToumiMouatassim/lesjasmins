@@ -16,40 +16,6 @@ export default function NewsPage() {
 
   return (
     <Fragment>
-       <section
-        className="breadcrumb-hero position-relative d-flex align-items-center justify-content-center"
-        style={{
-          height: "50vh",
-          minHeight: "150px",
-          backgroundImage: "url(/img/aboutbg.png)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          zIndex: 999,
-          paddingTop: "120px",
-        }}
-      >
-        <div
-          className="overlay position-absolute w-100"
-          style={{
-            background: "linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,123,255,0.4))",
-            zIndex: 2,
-            top: 0,
-            bottom: 0,
-          }}
-        ></div>
-        <div
-          className="container text-center position-relative pt-10"
-          style={{ zIndex: 3 }}
-        >
-          <h1 className="fs-48 text-white mb-3 animate__animated animate__fadeInDown">
-            Actualités & Événements
-          </h1>
-          <p className="mt-2 text-white fs-18 animate__animated animate__fadeInUp animate__delay-1s">
-            Restez informé des dernières nouvelles et événements de notre hôpital.
-          </p>
-        </div>
-      </section>
-
        <section className="bg-light py-5">
         <div className="container position-relative">
           <div
