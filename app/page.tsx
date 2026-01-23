@@ -8,6 +8,7 @@ import PageProgress from "./components/PageProgress"
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Specialites from "./components/Specialites";
+import SpecialitesCard from "./components/SpecialitesCard";
 import EventsSection from "./components/Events";
 import { SupportSection as Support } from "./components/Support";
 import Services from "./components/Services";

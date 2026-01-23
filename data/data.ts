@@ -407,20 +407,22 @@ export interface specialite {
   src?: string;
   title: string;
   description: string;
+  whatsapp?: string;
 }
 
 export const specialitesList: specialite[] = [
   {
     id: 1,
     url: '#',
-    src: '/img/RADIOLOGY.PNG',
+    src: '/img/RADIOLOGY.png',
     title: 'Radiologie',
     description: 'Interventions pour corriger les maladies du cœur et des vaisseaux.',
+    whatsapp: "0612345678"
   },
   {
     id: 2,
     url: '#',
-    src: '/img/REANIMATION.JPEG',
+    src: '/img/REANIMATION.jpeg',
     title: 'Réanimation',
     description: 'Traitement chirurgical des fractures et maladies des os et articulations.',
   },
@@ -455,21 +457,21 @@ export const specialitesList: specialite[] = [
   {
     id: 7,
     url: '#',
-    src: '/img/UROLOGIE.JPEG',
+    src: '/img/UROLOGIE.jpeg',
     title: 'Urologie',
     description: 'Traitement des maladies des reins et voies urinaires.',
   },
   {
     id: 8,
     url: '#',
-    src: '/img/GYNECO.JPEG',
+    src: '/img/GYNECO.jpeg',
     title: 'Gynécologie',
     description: 'Suivi et soins liés à la santé reproductive féminine.',
   },
   {
     id: 9,
     url: '#',
-    src: '/img/TRAUMATOLOGIE.JPEG',
+    src: '/img/TRAUMATOLOGIE.jpeg',
     title: 'Traumatologie',
     description: 'Prise en charge des blessures et accidents traumatiques.',
   },
