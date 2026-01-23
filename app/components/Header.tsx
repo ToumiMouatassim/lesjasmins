@@ -14,14 +14,14 @@ const Topbar: FC = () => {
     <section className="primary-bg fixed-top shadow-sm" style={{ height: 51.5, zIndex: 1000  }}>
       <div className="container h-100">
         <div className="d-flex align-items-center justify-content-between h-100">
-           <div className="d-none d-md-flex text-white fw-semibold fs-16" >
+           <div className="d-none d-lg-flex text-white fw-semibold fs-16" >
             <NextLink href="tel:+212523425820" title="Nous sommes là pour vous 24/24h." />
           </div>
            <div className="d-flex align-items-center ">
             <NextLink href="mailto:contact@hopitallesjasmins.com" title="" className="uil uil-envelope fs-22 me-2 text-white"/>
             <a
               href="mailto:contact@hopitallesjasmins.com"
-              className="d-flex align-items-center link-white fw-semibold text-white d-none d-sm-inline"
+              className="d-flex align-items-center link-white fw-semibold text-white d-none d-lg-inline"
             >
               contact@hopitallesjasmins.com
             </a>
@@ -34,7 +34,7 @@ const Topbar: FC = () => {
               className="fw-bold text-decoration-none"
               style={{ color: '#ff4d4f', fontSize: '16px' , animation: 'pulse 3s infinite',}}
             >
-              Urgences : +212 523425820
+              +212 523425820
             </a>
           </div>
            <div className="d-flex align-items-center gap-2 mt-1.5 mt-md-0">
