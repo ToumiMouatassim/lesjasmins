@@ -183,7 +183,7 @@ export default function NewsPage() {
           .custom-arrow {
             width: 3rem;
             height: 3rem;
-            background-color: var(--primary-color);
+            
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
