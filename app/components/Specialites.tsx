@@ -83,7 +83,7 @@ export default function NewsPage() {
             <NextLink
               href="/rendez-vous"
               title="Prendre rendez-vous"
-              className="btn btn-lg btn-primary mt-10 rounded-pill shadow"
+              className="btn btn-lg btn-primary mt-4 rounded-pill shadow"
             />
           </div>
         </div>

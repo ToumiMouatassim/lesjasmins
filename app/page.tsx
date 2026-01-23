@@ -183,35 +183,8 @@ export default function HomePage() {
         </section>
 
         {/* //Events */}
-        <section className="wrapper bg-light py-10 py-md-14" id="evenements">
-          <div className="container text-center">
-            <div className="col-md-10 col-lg-8 mx-auto">
-              <h2
-                className="fw-bold position-relative d-inline-block pb-2"
-                style={{
-                  fontSize: "8rem",
-                  color: "#1372B2",
-                  marginBottom: "4rem",
-                }}
-              >
-                Evenements & Actualités
-                <span
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    width: "100px",
-                    height: "3px",
-                    backgroundColor: "#8BBB44",
-                    borderRadius: "2px",
-                  }}
-                ></span>
-              </h2>
-            </div>
-            <EventsSection />
-
-          </div>
+        <section id="evenements">
+          <EventsSection />
         </section>
 
         <section>
