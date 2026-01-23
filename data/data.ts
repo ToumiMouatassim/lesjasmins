@@ -414,7 +414,7 @@ export const specialitesList: specialite[] = [
   {
     id: 1,
     url: '#',
-    src: '/img/RADIOLOGY.png',
+    src: '/img/RADIOLOGY.PNG',
     title: 'Radiologie',
     description: 'Interventions pour corriger les maladies du cœur et des vaisseaux.',
     whatsapp: "0612345678"
@@ -422,7 +422,7 @@ export const specialitesList: specialite[] = [
   {
     id: 2,
     url: '#',
-    src: '/img/REANIMATION.jpeg',
+    src: '/img/REANIMATION.JPEG',
     title: 'Réanimation',
     description: 'Traitement chirurgical des fractures et maladies des os et articulations.',
   },
@@ -457,21 +457,21 @@ export const specialitesList: specialite[] = [
   {
     id: 7,
     url: '#',
-    src: '/img/UROLOGIE.jpeg',
+    src: '/img/UROLOGIE.JPEG',
     title: 'Urologie',
     description: 'Traitement des maladies des reins et voies urinaires.',
   },
   {
     id: 8,
     url: '#',
-    src: '/img/GYNECO.jpeg',
+    src: '/img/GYNECO.JPEG',
     title: 'Gynécologie',
     description: 'Suivi et soins liés à la santé reproductive féminine.',
   },
   {
     id: 9,
     url: '#',
-    src: '/img/TRAUMATOLOGIE.jpeg',
+    src: '/img/TRAUMATOLOGIE.JPEG',
     title: 'Traumatologie',
     description: 'Prise en charge des blessures et accidents traumatiques.',
   },
