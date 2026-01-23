@@ -92,8 +92,7 @@ const Footer: FC = () => {
               <div className="d-flex justify-content-center border rounded">
                 <iframe
                   title="Clinic Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.993089438932!2d-6.3806011!3d32.3246476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda387004c9b599f%3A0xb223a6883d0c9edd!2sLaboratoire%20d%E2%80%99Analyses%20M%C3%A9dicales%20les%20Jasmins!5e1!3m2!1sfr!2sma!4v1761513994783!5m2!1sfr!2sma"
-                  width="100%"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.9917217979664!2d-6.38323502526694!3d32.32469160696611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda3870044d320d7%3A0x40d303fd92d80773!2sH%C3%B4pital%20Priv%C3%A9%20Les%20Jasmins!5e1!3m2!1sfr!2sma!4v1768985951085!5m2!1sfr!2sma"
                   height={250}
                   loading="lazy"
                   style={{ border: 0 }}

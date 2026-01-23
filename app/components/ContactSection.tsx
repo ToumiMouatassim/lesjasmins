@@ -175,8 +175,7 @@ const ContactSection: React.FC = () => {
           <div className="col-lg-6">
             <div className="ratio ratio-16x9 shadow-sm rounded">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.781882839533!2d10.165960215259632!3d36.81897097994715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd345b54a7e2a9%3A0x9bcb6c8fba94cba9!2sClinique%20Les%20Jasmins!5e0!3m2!1sfr!2stn!4v1679945670914!5m2!1sfr!2stn"
-                width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.9917217979664!2d-6.38323502526694!3d32.32469160696611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda3870044d320d7%3A0x40d303fd92d80773!2sH%C3%B4pital%20Priv%C3%A9%20Les%20Jasmins!5e1!3m2!1sfr!2sma!4v1768985951085!5m2!1sfr!2sma"                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
