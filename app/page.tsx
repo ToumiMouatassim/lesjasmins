@@ -12,6 +12,7 @@ import EventsSection from "./components/Events";
 import { SupportSection as Support } from "./components/Support";
 import Services from "./components/Services";
 import ContactSection from "./components/ContactSection";
+import LaboratoireSection from "./components/Laboratory";
 
 export default function HomePage() {
   return (
@@ -191,8 +192,13 @@ export default function HomePage() {
         </section>
 
         <section>
+          <LaboratoireSection />
+        </section>
+
+        <section>
           <Support/>
         </section>
+
 
         <section>
           <ContactSection />
