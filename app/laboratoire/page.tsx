@@ -20,13 +20,7 @@ const LaboratoirePage: React.FC = () => {
     "Cytométrie en flux",
   ];
 
-  const values = [
-    { title: "ADN", desc: "Au service exclusif des laboratoires partenaires." },
-    { title: "Innovation", desc: "Toujours à la pointe de la technologie." },
-    { title: "Excellence", desc: "Mutualisation de nos expertises." },
-    { title: "Respect", desc: "Respect total envers tous nos partenaires." },
-    { title: "Éthique", desc: "Protection des données et qualité médicale." },
-  ];
+ 
 
   return (
     <Fragment>
@@ -56,38 +50,62 @@ const LaboratoirePage: React.FC = () => {
       </section>
 
       <main className="content-wrapper">
-        {/* Mission */}
         <section className="py-5 section-fade">
           <div className="container">
             <div className="row align-items-center">
+              <div className="row mt-4 text-start">
+                    <div className="col-md-6 mb-3">
+                      <h6 className="text-secondary">📍 Adresse</h6>
+                      <p className="mb-0">
+                        Lotissement Mawra, Oulad Ayad – Béni Mellal  
+                        <br />
+                        (Round-point route Marrakech avant Afriquia Café Oasis)
+                      </p>
+                    </div>
+
+                    <div className="col-md-6 mb-3">
+                      <h6 className="text-secondary">📞 Contact</h6>
+                      <p className="mb-0">
+                        05 23 42 25 25  
+                        <br />
+                        06 16 18 93 23
+                      </p>
+                    </div>
+                  </div>
               <div className="col-lg-6 text-center mb-4 mb-lg-0">
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
                     src="/img/labo1.jpg"
-                    alt="Notre Mission"
+                    alt="Laboratoire Les Jasmins"
                     width={700}
                     height={480}
-                    style={{ width: "100%", height: "220px" }}
+                    style={{ width: "100%", height: "260px", objectFit: "cover" }}
                   />
                 </div>
               </div>
+
               <div className="col-lg-6">
-                <div className="card card-ghost shadow-sm border-0 p-4">
-                  <h2 className="text-primary mb-3 text-center">Notre Laboratoire</h2>
-                  <p className="lead mb-3">
-                    Le Laboratoire Les Jasmins d’Analyses Médicales est d’une nouvelle génération de plateaux techniques fermés, 
-                    spécialisés et pluridisciplinaires. Notre mission est de fournir des services d&apos;analyses médicales de haute qualité 
-                    à nos laboratoires partenaires, en mettant l&apos;accent sur la précision, la rapidité et la fiabilité des résultats.
+                <div className="card card-ghost shadow-sm border-0 p-4 text-center">
+                  <h2 className="text-primary mb-3 fs-28">
+                    🧪 Laboratoire Les Jasmins — Garde 24h/24 & 7j/7
+                  </h2>
+
+                  <p className="lead">
+                    📢 Le Laboratoire d’Analyses Médicales <strong>Les Jasmins</strong> assure une garde
+                    <strong> 24h/24 et 7j/7</strong>, pour répondre à tous vos besoins urgents en analyses
+                    médicales, à toute heure du jour ou de la nuit.
                   </p>
-                  
-                  <div className="mt-4 text-center">
-                    <NextLink href="" title="Découvrir nos services" className="btn btn-outline-primary" />
-                  </div>
+                  <hr className="my-4" />
+                  <p>
+                    Votre santé est notre priorité, même en dehors des horaires habituels.  
+                    N’hésitez pas à nous contacter ou à vous présenter directement au laboratoire.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* Valeurs */}
         <section className="py-5 bg-white section-fade">
@@ -95,16 +113,15 @@ const LaboratoirePage: React.FC = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="card card-ghost shadow-sm border-0 p-4">
-                  <h2 className="text-secondary mb-3 text-center">Une équipe à votre service</h2>
-                  <p className="lead mb-3">
-                    Le Laboratoire National Mohammed VI d&apos;Analyses Médicales renforce son développement par une mutualisation accrue des compétences.
-                    En chiffres, le LNM6 est fort de l&apos;expertise de 8 biologistes, du savoir-faire de plus 20 techniciens spécialisés, de l&apos;objectivité 
-                    de 7 scientifiques et du professionnalisme de plus de 60 collaborateurs.
+                  <h2 className="text-secondary mb-3 text-center">Une équipe à votre service</h2>  
+                  <p className="lead mb-4">
+                    🔬 Chez <strong>Les Jasmins</strong>, la science se vit avec passion.  
+                    Chaque boîte de Petri raconte une histoire que nous écrivons à travers la recherche et la précision.
                   </p>
-                  
-                  <div className="mt-4 text-center">
-                    <NextLink href="/services" title="Découvrir nos services" className="btn btn-outline-secondary" />
-                  </div>
+                  <p className="mb-5">
+                    Le laboratoire d’analyses médicales <strong>Les Jasmins 🌼</strong>, là où la rigueur rencontre
+                    la passion scientifique, toujours au service de votre santé ⚕️
+                  </p>
                 </div>
               </div>
               <div className="col-lg-6 text-center">
@@ -118,6 +135,7 @@ const LaboratoirePage: React.FC = () => {
                   />
                 </div>
               </div>
+              
             </div>
           </div>
         </section>
@@ -137,19 +155,37 @@ const LaboratoirePage: React.FC = () => {
         </section>
 
         {/* Contact */}
-        <section className="py-5 section-fade text-center">
-          <div className="container">
-            <h2 className="mb-4">Nous contacter</h2>
-            <form className="max-w-2xl mx-auto grid grid-cols-1 gap-4 text-left">
-              <input type="text" placeholder="Nom" className="p-3 border rounded w-full" />
-              <input type="text" placeholder="Prénom" className="p-3 border rounded w-full" />
-              <input type="email" placeholder="Email" className="p-3 border rounded w-full" />
-              <input type="tel" placeholder="Téléphone" className="p-3 border rounded w-full" />
-              <textarea placeholder="Message" className="p-3 border rounded w-full h-32"></textarea>
-              <button className="btn btn-primary w-full">Soumettre</button>
+        <section className="py-5 section-fade d-flex justify-content-center bg-light">
+          <div className="contact-card shadow p-4 p-md-5">
+            <h2 className="text-center mb-4 text-primary">Nous contacter</h2>
+
+            <form action="https://formsubmit.co/TONEMAIL@gmail.com" method="POST">
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <input type="text" name="nom" placeholder="Nom" required className="form-control form-custom" />
+                </div>
+                <div className="col-md-6">
+                  <input type="text" name="prenom" placeholder="Prénom" required className="form-control form-custom" />
+                </div>
+                <div className="col-12">
+                  <input type="email" name="email" placeholder="Email" required className="form-control form-custom" />
+                </div>
+                <div className="col-12">
+                  <input type="tel" name="telephone" placeholder="Téléphone" className="form-control form-custom" />
+                </div>
+                <div className="col-12">
+                  <textarea name="message" rows={4} placeholder="Votre message..." required className="form-control form-custom"></textarea>
+                </div>
+                <div className="col-12 text-center">
+                  <button type="submit" className="btn btn-primary px-5 py-2 mt-2">
+                    Envoyer le message
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </section>
+
       </main>
 
       <style>{`

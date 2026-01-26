@@ -58,7 +58,7 @@ const ServicesSection: FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div>    
 
         <div className="text-center mt-5">
           <a href="/services" className="btn btn-primary px-4 py-2 rounded-pill">
