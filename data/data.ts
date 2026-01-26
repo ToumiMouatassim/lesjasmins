@@ -416,102 +416,108 @@ export const specialitesList: specialite[] = [
     url: '#',
     src: '/img/RADIOLOGY.PNG',
     title: 'Radiologie',
-    description: 'Interventions pour corriger les maladies du cœur et des vaisseaux.',
-    whatsapp: "0612345678"
+    description:
+      'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
+    whatsapp: '0612345678',
   },
   {
     id: 2,
     url: '#',
     src: '/img/REANIMATION.JPEG',
     title: 'Réanimation',
-    description: 'Traitement chirurgical des fractures et maladies des os et articulations.',
+    description:
+      'La réanimation prend en charge les patients en état critique nécessitant une surveillance continue et des soins intensifs, notamment en cas de détresse respiratoire, cardiaque ou de défaillance multi-organique.',
   },
   {
     id: 3,
     url: '#',
     src: '/img/CARDIOLOGIE.JPEG',
-    title: 'Cardiologie et explorations cardiaque',
-    description: 'Opérations de l’abdomen, de la peau et des tissus mous.',
+    title: 'Cardiologie et explorations cardiaques',
+    description:
+      'La cardiologie assure la prévention, le diagnostic et le traitement des maladies du cœur et des vaisseaux. Elle comprend des explorations fonctionnelles comme l’ECG, l’échocardiographie et les tests d’effort.',
   },
   {
     id: 4,
     url: '#',
     src: '/img/CHIRURGIE-GENERALE.JPEG',
     title: 'Chirurgie Générale',
-    description: 'Interventions liées à la santé reproductive féminine.',
+    description:
+      'La chirurgie générale prend en charge les interventions chirurgicales de l’abdomen, du système digestif, de la peau et des tissus mous, en utilisant des techniques modernes et sécurisées.',
   },
   {
     id: 5,
     url: '#',
     src: '/img/ORL.JPEG',
     title: 'Otorhinolaryngologie',
-    description: 'Traitement des affections du cerveau, de la moelle épinière et des nerfs.',
+    description:
+      'La spécialité ORL traite les maladies de l’oreille, du nez et de la gorge, ainsi que les troubles de l’audition, de la voix, de l’équilibre et des sinus.',
   },
   {
     id: 6,
     url: '#',
     src: '/img/OPHTALMO.jpeg',
     title: 'Ophtalmologie',
-    description: 'Correction des troubles de la vision et des maladies oculaires.',
+    description:
+      'L’ophtalmologie est dédiée au diagnostic et au traitement des maladies des yeux et de la vision, incluant les troubles visuels, les infections oculaires et la chirurgie de la cataracte.',
   },
   {
     id: 7,
     url: '#',
     src: '/img/UROLOGIE.JPEG',
     title: 'Urologie',
-    description: 'Traitement des maladies des reins et voies urinaires.',
+    description:
+      'L’urologie prend en charge les pathologies de l’appareil urinaire chez l’homme et la femme, ainsi que les troubles de l’appareil génital masculin, médicaux et chirurgicaux.',
   },
   {
     id: 8,
     url: '#',
     src: '/img/GYNECO.JPEG',
     title: 'Gynécologie',
-    description: 'Suivi et soins liés à la santé reproductive féminine.',
+    description:
+      'La gynécologie assure le suivi médical de la femme à toutes les étapes de sa vie, incluant la santé reproductive, la grossesse, le dépistage et le traitement des pathologies gynécologiques.',
   },
   {
     id: 9,
     url: '#',
     src: '/img/TRAUMATOLOGIE.JPEG',
     title: 'Traumatologie',
-    description: 'Prise en charge des blessures et accidents traumatiques.',
+    description:
+      'La traumatologie prend en charge les blessures liées aux accidents, chutes et traumatismes, incluant les fractures, luxations et lésions musculo-squelettiques.',
   },
   {
     id: 10,
     url: '#',
     src: '/img/NEURO.JPEG',
     title: 'Neuro-Chirurgie',
-    description: 'Traitement chirurgical des troubles du cerveau et de la colonne vertébrale.',
+    description:
+      'La neurochirurgie traite les affections du système nerveux central et périphérique, notamment le cerveau, la moelle épinière et la colonne vertébrale, par des techniques chirurgicales spécialisées.',
   },
   {
     id: 11,
     url: '#',
     src: '/img/GASTRO.JPEG',
-    title: 'Gastro-Enterologie',
-    description: 'Soins et traitements des maladies digestives et intestinales.',
+    title: 'Gastro-Entérologie',
+    description:
+      'La gastro-entérologie est spécialisée dans le diagnostic et le traitement des maladies du système digestif, du foie, de l’estomac et des intestins, incluant les explorations endoscopiques.',
   },
   {
     id: 12,
     url: '#',
     src: '/img/PEDIATRE.JPEG',
     title: 'Pédiatrie',
-    description: 'Suivi médical des enfants et adolescents.',
+    description:
+      'La pédiatrie assure le suivi médical, la prévention et le traitement des maladies chez les nourrissons, enfants et adolescents, dans un environnement adapté et rassurant.',
   },
   {
     id: 13,
     url: '#',
     src: '/img/PNEUMOLOGIE.JPEG',
     title: 'Pneumologie',
-    description: 'Soins pour maladies respiratoires et troubles pulmonaires.',
+    description:
+      'La pneumologie prend en charge les maladies respiratoires telles que l’asthme, les infections pulmonaires et les troubles respiratoires chroniques, avec des explorations fonctionnelles adaptées.',
   },
-  // {
-  //   id: 14,
-  //   url: '#',
-  //   src: '/img/urgences.png',
-  //   title: 'Urgences',
-  //   description: 'Soins pour maladies respiratoires et troubles pulmonaires.',
-  // },
-
 ];
+
 
 
 export const aboutUsFooter = [
