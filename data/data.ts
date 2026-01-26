@@ -450,7 +450,7 @@ export const specialitesList: specialite[] = [
   {
     id: 6,
     url: '#',
-    src: '/img/OPHTALMOLOGIE.JPEG',
+    src: '/img/OPHTALMO.jpeg',
     title: 'Ophtalmologie',
     description: 'Correction des troubles de la vision et des maladies oculaires.',
   },
