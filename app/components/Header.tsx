@@ -102,9 +102,9 @@ const Navbar: FC = () => {
               { href: "/a-propos", title: "À propos" },
               { href: "/services", title: "Services" },
               { href: "/actualites", title: "Événements" },
+              { href: "/laboratoire", title: "Laboratoire" },
               { href: "/recrutement", title: "Recrutement" },
               { href: "/contact", title: "Contact" },
-              { href: "/laboratoire", title: "Laboratoire" },
             ].map(({ href, title }) => (
               <li className="nav-item" key={href} data-bs-dismiss="offcanvas">
                 <NextLink href={href} title={title} className="nav-link "  />

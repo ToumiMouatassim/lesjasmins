@@ -8,7 +8,6 @@ import PageProgress from "./components/PageProgress"
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Specialites from "./components/Specialites";
-import SpecialitesCard from "./components/SpecialitesCard";
 import EventsSection from "./components/Events";
 import { SupportSection as Support } from "./components/Support";
 import Services from "./components/Services";
@@ -152,7 +151,7 @@ export default function HomePage() {
         </section>
 
         {/* Specialites */}
-        <section className="wrapper bg-light py-10 py-md-14">
+        <section className="wrapper bg-light py-0 py-md-10">
           <div className="container text-center">
             <div className="col-md-10 col-lg-8 mx-auto">
               <h2

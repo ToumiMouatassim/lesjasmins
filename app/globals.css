@@ -28,3 +28,7 @@ html {
   scroll-behavior: smooth;
 }
  
+nextjs-portal {
+  display: none !important;
+}
+

@@ -49,7 +49,8 @@ const LaboratoirePage: React.FC = () => {
         <div className="container text-center position-relative pt-10" style={{ zIndex: 3 }}>
           <h1 className="fs-48 text-white mb-3 animate__animated animate__fadeInDown">Laboratoire</h1>
           <p className="mt-2 text-white fs-18 animate__animated animate__fadeInUp animate__delay-1s">
-            Découvrez le Laboratoire Les Jasmins d’Analyses Médicales et nos services.
+            Bienvenue dans le Laboratoire Les Jasmins d’Analyses Médicales. <br /> 
+            Découvrez nos analyses médicales et services disponibles.
           </p>
         </div>
       </section>
@@ -62,7 +63,7 @@ const LaboratoirePage: React.FC = () => {
               <div className="col-lg-6 text-center mb-4 mb-lg-0">
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
-                    src="/img/missionAbout.PNG"
+                    src="/img/labo1.jpg"
                     alt="Notre Mission"
                     width={700}
                     height={480}
@@ -72,23 +73,15 @@ const LaboratoirePage: React.FC = () => {
               </div>
               <div className="col-lg-6">
                 <div className="card card-ghost shadow-sm border-0 p-4">
-                  <h2 className="text-primary mb-3">Un laboratoire d&apos;excellence</h2>
+                  <h2 className="text-primary mb-3 text-center">Notre Laboratoire</h2>
                   <p className="lead mb-3">
-                    Apporter une biologie médicale de qualité et accessible à tous les professionnels de santé, avec rapidité, fiabilité et innovation.
+                    Le Laboratoire Les Jasmins d’Analyses Médicales est d’une nouvelle génération de plateaux techniques fermés, 
+                    spécialisés et pluridisciplinaires. Notre mission est de fournir des services d&apos;analyses médicales de haute qualité 
+                    à nos laboratoires partenaires, en mettant l&apos;accent sur la précision, la rapidité et la fiabilité des résultats.
                   </p>
-                  <ul className="list-unstyled mb-0">
-                    <li className="mb-2">
-                      <i className="uil uil-check text-success me-2"></i>Fiabilité et rapidité des analyses
-                    </li>
-                    <li className="mb-2">
-                      <i className="uil uil-check text-success me-2"></i>Innovation et formation continue
-                    </li>
-                    <li>
-                      <i className="uil uil-check text-success me-2"></i>Engagement pour la souveraineté sanitaire nationale
-                    </li>
-                  </ul>
+                  
                   <div className="mt-4 text-center">
-                    <NextLink href="/services" title="Découvrir nos services" className="btn btn-outline-primary" />
+                    <NextLink href="" title="Découvrir nos services" className="btn btn-outline-primary" />
                   </div>
                 </div>
               </div>
@@ -102,14 +95,13 @@ const LaboratoirePage: React.FC = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="card card-ghost shadow-sm border-0 p-4">
-                  <h2 className="text-secondary mb-3">Nos Valeurs</h2>
-                  <ul className="list-unstyled mb-0">
-                    {values.map((v, i) => (
-                      <li key={i} className="mb-2">
-                        <i className="uil uil-check text-success me-2"></i>{v.title} : {v.desc}
-                      </li>
-                    ))}
-                  </ul>
+                  <h2 className="text-secondary mb-3 text-center">Une équipe à votre service</h2>
+                  <p className="lead mb-3">
+                    Le Laboratoire National Mohammed VI d&apos;Analyses Médicales renforce son développement par une mutualisation accrue des compétences.
+                    En chiffres, le LNM6 est fort de l&apos;expertise de 8 biologistes, du savoir-faire de plus 20 techniciens spécialisés, de l&apos;objectivité 
+                    de 7 scientifiques et du professionnalisme de plus de 60 collaborateurs.
+                  </p>
+                  
                   <div className="mt-4 text-center">
                     <NextLink href="/services" title="Découvrir nos services" className="btn btn-outline-secondary" />
                   </div>
@@ -118,9 +110,9 @@ const LaboratoirePage: React.FC = () => {
               <div className="col-lg-6 text-center">
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
-                    src="/img/historyabout.png"
+                    src="/img/labo2.jpg"
                     alt="Notre Histoire"
-                    width={700}
+                    width={800}
                     height={480}
                     style={{ width: "100%", height: "250px" }}
                   />

@@ -19,7 +19,7 @@ export default function NewsPage() {
       <section
         className="breadcrumb-hero position-relative d-flex align-items-center justify-content-center"
         style={{
-          height: "35vh",
+          height: "45vh",
           minHeight: "150px",
           backgroundImage: "url(/img/aboutbg.png)",
           backgroundSize: "cover",

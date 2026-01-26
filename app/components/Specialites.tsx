@@ -17,11 +17,11 @@ export default function NewsPage() {
 
   return (
     <Fragment>
-       <section className="bg-light py-5">
+       <section className="bg-light py-5 ">
         <div className="container position-relative">
           <div
             id="specialitesCarousel"
-            className="carousel slide pb-11 pt-10"
+            className="carousel slide pb-4 pt-0"
             data-bs-ride="carousel"
             data-bs-interval="3000"
           >
@@ -83,7 +83,7 @@ export default function NewsPage() {
             <NextLink
               href="/rendez-vous"
               title="Prendre rendez-vous"
-              className="btn btn-lg btn-primary mt-4 rounded-pill shadow"
+              className="btn btn-lg btn-primary mt-5 rounded-pill shadow"
             />
           </div>
         </div>
