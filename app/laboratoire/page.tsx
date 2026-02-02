@@ -4,6 +4,8 @@ import React, { Fragment, useMemo } from "react";
 import { Carousel } from "react-bootstrap";
 import NextLink from "../components/NextLink";
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const LaboratoirePage: React.FC = () => {
   const specialities = [
@@ -23,7 +25,18 @@ const LaboratoirePage: React.FC = () => {
  
 
   return (
+    
     <Fragment>
+      {/* WhatsApp Laboratoire */}
+      <a
+        href="https://wa.me/212616189323"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-labo"
+        aria-label="Contacter le laboratoire sur WhatsApp"
+      >
+        <FaWhatsapp size={28} />
+      </a>
       {/* Hero */}
       <section className="breadcrumb-hero position-relative d-flex align-items-center justify-content-center" style={{
         height: '50vh',
@@ -57,7 +70,7 @@ const LaboratoirePage: React.FC = () => {
                     <div className="col-md-6 mb-3">
                       <h6 className="text-secondary">📍 Adresse</h6>
                       <p className="mb-0">
-                        Lotissement Mawra, Oulad Ayad – Béni Mellal  
+                        Lotissement Mawra, Oulad Ayad - Béni Mellal  
                         <br />
                         (Round-point route Marrakech avant Afriquia Café Oasis)
                       </p>
@@ -91,14 +104,14 @@ const LaboratoirePage: React.FC = () => {
                   </h2>
 
                   <p className="lead">
-                    📢 Le Laboratoire d’Analyses Médicales <strong>Les Jasmins</strong> assure une garde
+                    📢 Le Laboratoire d'Analyses Médicales <strong>Les Jasmins</strong> assure une garde
                     <strong> 24h/24 et 7j/7</strong>, pour répondre à tous vos besoins urgents en analyses
                     médicales, à toute heure du jour ou de la nuit.
                   </p>
                   <hr className="my-4" />
                   <p>
                     Votre santé est notre priorité, même en dehors des horaires habituels.  
-                    N’hésitez pas à nous contacter ou à vous présenter directement au laboratoire.
+                    N'hésitez pas à nous contacter ou à vous présenter directement au laboratoire.
                   </p>
                 </div>
               </div>
@@ -119,7 +132,7 @@ const LaboratoirePage: React.FC = () => {
                     Chaque boîte de Petri raconte une histoire que nous écrivons à travers la recherche et la précision.
                   </p>
                   <p className="mb-5">
-                    Le laboratoire d’analyses médicales <strong>Les Jasmins 🌼</strong>, là où la rigueur rencontre
+                    Le laboratoire d'analyses médicales <strong>Les Jasmins 🌼</strong>, là où la rigueur rencontre
                     la passion scientifique, toujours au service de votre santé ⚕️
                   </p>
                 </div>
@@ -213,6 +226,29 @@ const LaboratoirePage: React.FC = () => {
           border-radius: 12px;
           overflow: hidden;
         }
+        .whatsapp-labo {
+          position: fixed;
+          bottom: 25px;
+          right: 25px;
+          width: 58px;
+          height: 58px;
+          background: #25d366;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+          z-index: 9999;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-labo:hover {
+          transform: scale(1.1);
+          box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+          color: #fff;
+        }
+
       `}</style>
     </Fragment>
   );
