@@ -4,6 +4,8 @@ import React, { Fragment, useMemo } from "react";
 import { Carousel } from "react-bootstrap";
 import NextLink from "../components/NextLink";
 import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 const LaboratoirePage: React.FC = () => {
   const specialities = [
@@ -23,7 +25,18 @@ const LaboratoirePage: React.FC = () => {
  
 
   return (
+    
     <Fragment>
+      {/* WhatsApp Laboratoire */}
+      <a
+        href="https://wa.me/212616189323"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-labo"
+        aria-label="Contacter le laboratoire sur WhatsApp"
+      >
+        <FaWhatsapp size={28} />
+      </a>
       {/* Hero */}
       <section className="breadcrumb-hero position-relative d-flex align-items-center justify-content-center" style={{
         height: '50vh',
@@ -213,6 +226,29 @@ const LaboratoirePage: React.FC = () => {
           border-radius: 12px;
           overflow: hidden;
         }
+        .whatsapp-labo {
+          position: fixed;
+          bottom: 25px;
+          right: 25px;
+          width: 58px;
+          height: 58px;
+          background: #25d366;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+          z-index: 9999;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-labo:hover {
+          transform: scale(1.1);
+          box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+          color: #fff;
+        }
+
       `}</style>
     </Fragment>
   );

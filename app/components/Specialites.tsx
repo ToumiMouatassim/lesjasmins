@@ -110,42 +110,47 @@ export default function NewsPage() {
 
         {/* Styles */}
         <style>{`
-          .specialite-card {
-            max-width: 380px;
-            width: 100%;
-            border-radius: 0.9rem;
-            overflow: hidden;
-            transition: 0.3s ease;
-          }
+        .specialite-card {
+          max-width: 380px;
+          width: 100%;
+          border-radius: 0.9rem;
+          overflow: hidden;
+          transition: 0.3s ease;
+        }
 
-          .specialite-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-          }
+        .specialite-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
 
-          .card-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-          }
+        .card-title {
+          font-size: 1.1rem;
+          font-weight: 700;
+        }
 
-          .card-text {
-            font-size: 0.9rem;
-            color: #555;
-          }
+        .card-text {
+          font-size: 0.9rem;
+          color: #555;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
 
-          .custom-arrow {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-          }
+        .custom-arrow {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
 
-          .carousel-control-prev-icon,
-          .carousel-control-next-icon {
-            filter: invert(1);
-          }
-        `}</style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          filter: invert(1);
+        }
+      `}</style>
+
       </section>
     </Fragment>
   );
