@@ -1,29 +1,42 @@
-"use client"; 
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useMemo } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { specialitesList, specialite } from "@/data/data";
 import NextLink from "./NextLink";
 
 export default function NewsPage() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  // Build slides dynamically
   const slides = useMemo(() => {
     const out: specialite[][] = [];
-    for (let i = 0; i < specialitesList.length; i += 2) {
-      out.push(specialitesList.slice(i, i + 2));
+    const step = isMobile ? 1 : 2;
+
+    for (let i = 0; i < specialitesList.length; i += step) {
+      out.push(specialitesList.slice(i, i + step));
     }
     return out;
-  }, []);
+  }, [isMobile]);
 
   return (
     <Fragment>
-       <section className="bg-light py-5 ">
+      <section className="bg-light py-5">
         <div className="container position-relative">
           <div
             id="specialitesCarousel"
-            className="carousel slide pb-4 pt-0"
+            className="carousel slide pb-4"
             data-bs-ride="carousel"
-            data-bs-interval="3000"
+            data-bs-interval="3500"
           >
             <div className="carousel-inner">
               {slides.map((group, index) => (
@@ -33,25 +46,29 @@ export default function NewsPage() {
                 >
                   <div className="row justify-content-center">
                     {group.map((specialite) => (
-                      <div key={specialite.id} className="col-10 col-sm-6 col-md-5">
-                        <div className="card specialite-card border-0 shadow-sm mx-auto">
-                          <Link href={`Specialite/${specialite.id}`}>
+                      <div
+                        key={specialite.id}
+                        className="col-12 col-md-6 d-flex justify-content-center"
+                      >
+                        <div className="card specialite-card border-0 shadow-sm">
+                          <Link href={`/Specialite/${specialite.id}`}>
                             <div className="ratio ratio-16x9">
-                              
                               <Image
                                 src={specialite.src ?? "/img/placeholder.png"}
                                 alt={specialite.title}
                                 fill
-                                sizes="(max-width: 768px) 100vw, 50vw"
                                 style={{ objectFit: "cover" }}
                               />
                             </div>
                           </Link>
 
                           <div className="card-body text-center">
-                            <h4 className="card-title">{specialite.title}</h4>
-                            <p className="card-text">{specialite.description}</p>
-
+                            <h4 className="card-title">
+                              {specialite.title}
+                            </h4>
+                            <p className="card-text">
+                              {specialite.description}
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -61,14 +78,14 @@ export default function NewsPage() {
               ))}
             </div>
 
+            {/* Navigation */}
             <button
               className="carousel-control-prev custom-arrow"
               type="button"
               data-bs-target="#specialitesCarousel"
               data-bs-slide="prev"
             >
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Précédent</span>
+              <span className="carousel-control-prev-icon" />
             </button>
 
             <button
@@ -77,70 +94,43 @@ export default function NewsPage() {
               data-bs-target="#specialitesCarousel"
               data-bs-slide="next"
             >
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Suivant</span>
+              <span className="carousel-control-next-icon" />
             </button>
-            <NextLink
-              href="/rendez-vous"
-              title="Prendre rendez-vous"
-              className="btn btn-lg btn-primary mt-5 rounded-pill shadow"
-            />
+
+            {/* CTA */}
+            <div className="text-center mt-5">
+              <NextLink
+                href="/rendez-vous"
+                title="Prendre rendez-vous"
+                className="btn btn-lg btn-primary rounded-pill shadow"
+              />
+            </div>
           </div>
         </div>
 
-        <style >{`
-          :root {
-            --primary-color: #0d6efd;
-            --accent-color: #8bbb44;
-          }
-
+        {/* Styles */}
+        <style>{`
           .specialite-card {
-            max-width: 360px;
-            border-radius: 0.8rem;
+            max-width: 380px;
+            width: 100%;
+            border-radius: 0.9rem;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: 0.3s ease;
           }
 
           .specialite-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
           }
 
-          .specialite-card .card-body {
-            padding: 1.2rem 0.1rem;
-          }
-
-          .specialite-card .card-title {
+          .card-title {
             font-size: 1.1rem;
             font-weight: 700;
-            margin-bottom: 0.4rem;
           }
 
-          .specialite-card time {
-            font-size: 0.78rem;
-          }
-
-          .specialite-card .card-text {
-            font-size: 0.88rem;
-            line-height: 1.4;
-            margin-bottom: 1.1rem;
+          .card-text {
+            font-size: 0.9rem;
             color: #555;
-          }
-
-          .btn-cta {
-            font-size: 0.85rem;
-            padding: 7px 18px;
-            border-radius: 6px;
-            border: 2px solid var(--accent-color) !important;
-            color: var(--accent-color) !important;
-            background: transparent !important;
-            transition: 0.3s ease;
-          }
-
-          .btn-cta:hover {
-            background-color: var(--accent-color) !important;
-            color: #fff !important;
-            transform: translateY(-2px);
           }
 
           .custom-arrow {
@@ -149,22 +139,11 @@ export default function NewsPage() {
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
-            opacity: 0.9;
           }
 
           .carousel-control-prev-icon,
           .carousel-control-next-icon {
             filter: invert(1);
-          }
-
-          @media (max-width: 768px) {
-            .specialite-card {
-              max-width: 90%;
-            }
-
-            .specialite-card .card-body {
-              padding: 1rem 0.8rem;
-            }
           }
         `}</style>
       </section>
