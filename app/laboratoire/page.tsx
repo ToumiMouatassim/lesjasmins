@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa6";
 
 
+
 const LaboratoirePage: React.FC = () => {
   const specialities = [
     "Biochimie",
@@ -70,7 +71,7 @@ const LaboratoirePage: React.FC = () => {
                     <div className="col-md-6 mb-3">
                       <h6 className="text-secondary">📍 Adresse</h6>
                       <p className="mb-0">
-                        Lotissement Mawra, Oulad Ayad – Béni Mellal  
+                        Lotissement Mawra, Oulad Ayad - Béni Mellal  
                         <br />
                         (Round-point route Marrakech avant Afriquia Café Oasis)
                       </p>
@@ -104,14 +105,14 @@ const LaboratoirePage: React.FC = () => {
                   </h2>
 
                   <p className="lead">
-                    📢 Le Laboratoire d’Analyses Médicales <strong>Les Jasmins</strong> assure une garde
+                    📢 Le Laboratoire d&apos;Analyses Médicales <strong>Les Jasmins</strong> assure une garde
                     <strong> 24h/24 et 7j/7</strong>, pour répondre à tous vos besoins urgents en analyses
                     médicales, à toute heure du jour ou de la nuit.
                   </p>
                   <hr className="my-4" />
                   <p>
                     Votre santé est notre priorité, même en dehors des horaires habituels.  
-                    N’hésitez pas à nous contacter ou à vous présenter directement au laboratoire.
+                    N&apos;hésitez pas à nous contacter ou à vous présenter directement au laboratoire.
                   </p>
                 </div>
               </div>
@@ -132,7 +133,7 @@ const LaboratoirePage: React.FC = () => {
                     Chaque boîte de Petri raconte une histoire que nous écrivons à travers la recherche et la précision.
                   </p>
                   <p className="mb-5">
-                    Le laboratoire d’analyses médicales <strong>Les Jasmins 🌼</strong>, là où la rigueur rencontre
+                    Le laboratoire d&apos;analyses médicales <strong>Les Jasmins 🌼</strong>, là où la rigueur rencontre
                     la passion scientifique, toujours au service de votre santé ⚕️
                   </p>
                 </div>

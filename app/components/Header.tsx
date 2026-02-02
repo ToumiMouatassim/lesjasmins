@@ -101,7 +101,7 @@ const Navbar: FC = () => {
               { href: "/", title: "Accueil" },
               { href: "/a-propos", title: "À propos" },
               { href: "/services", title: "Services" },
-              { href: "/actualites", title: "Événements" },
+              { href: "/#evenements", title: "Événements" },
               { href: "/laboratoire", title: "Laboratoire" },
               { href: "/recrutement", title: "Recrutement" },
               { href: "/contact", title: "Contact" },
