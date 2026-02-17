@@ -62,7 +62,7 @@ export default function HomePage() {
             <div className="text-start mt-4">
               <About
                 imgPosition="right"
-                imgSrc="/img/apropos.jfif"
+                imgSrc="/img/aproposS.jpg"
                 heading="Hopital Privé Les Jasmins — Une équipe dédiée à votre santé et votre bien-être"
                 para="Situé stratégiquement au cœur de Beni Mellal, l'Hôpital Privé Les Jasmins est votre partenaire de confiance pour des soins de santé de qualité. Nous mettons à votre disposition une équipe de médecins hautement qualifiés et des technologies de pointe pour garantir des diagnostics précis et des traitements efficaces. Notre philosophie repose sur la conviction qu'un soin réussi nécessite l'écoute, la confiance et l'innovation, assurant un accompagnement personnalisé pour chaque patient. De la simple consultation ou contrôle spécialisé à l'intervention chirurgicale complexe, notre engagement constant est de garantir votre bien-être et votre sécurité."
                 isH1
