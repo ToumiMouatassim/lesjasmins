@@ -414,7 +414,7 @@ export const specialitesList: specialite[] = [
   {
     id: 1,
     url: '#',
-    src: '/img/RADIOLOGY.PNG',
+    src: '/img/radio.jpg',
     title: 'Radiologie',
     description:
       'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
@@ -423,7 +423,7 @@ export const specialitesList: specialite[] = [
   {
     id: 2,
     url: '#',
-    src: '/img/REANIMATION.JPEG',
+    src: '/img/reanimation.jpg',
     title: 'Réanimation',
     description:
       'La réanimation prend en charge les patients en état critique nécessitant une surveillance continue et des soins intensifs, notamment en cas de détresse respiratoire, cardiaque ou de défaillance multi-organique.',
@@ -431,7 +431,7 @@ export const specialitesList: specialite[] = [
   {
     id: 3,
     url: '#',
-    src: '/img/CARDIOLOGIE.JPEG',
+    src: '/img/cardio.jpg',
     title: 'Cardiologie et explorations cardiaques',
     description:
       'La cardiologie assure la prévention, le diagnostic et le traitement des maladies du cœur et des vaisseaux. Elle comprend des explorations fonctionnelles comme l’ECG, l’échocardiographie et les tests d’effort.',
@@ -439,7 +439,7 @@ export const specialitesList: specialite[] = [
   {
     id: 4,
     url: '#',
-    src: '/img/CHIRURGIE-GENERALE.JPEG',
+    src: '/img/chirurgie-gen.jpg',
     title: 'Chirurgie Générale',
     description:
       'La chirurgie générale prend en charge les interventions chirurgicales de l’abdomen, du système digestif, de la peau et des tissus mous, en utilisant des techniques modernes et sécurisées.',
@@ -455,7 +455,7 @@ export const specialitesList: specialite[] = [
   {
     id: 6,
     url: '#',
-    src: '/img/OPHTALMO.jpeg',
+    src: '/img/ophtalmo.jpg',
     title: 'Ophtalmologie',
     description:
       'L’ophtalmologie est dédiée au diagnostic et au traitement des maladies des yeux et de la vision, incluant les troubles visuels, les infections oculaires et la chirurgie de la cataracte.',
@@ -503,7 +503,7 @@ export const specialitesList: specialite[] = [
   {
     id: 12,
     url: '#',
-    src: '/img/PEDIATRE.JPEG',
+    src: '/img/PEDIATER.jpg',
     title: 'Pédiatrie',
     description:
       'La pédiatrie assure le suivi médical, la prévention et le traitement des maladies chez les nourrissons, enfants et adolescents, dans un environnement adapté et rassurant.',
