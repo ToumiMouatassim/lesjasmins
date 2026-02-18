@@ -40,8 +40,6 @@
     "**/*.mts",
     ".next\\dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts"
-  ],
-  "typeRoots": ["./types", "./node_modules/@types"
 ],
   "exclude": [
     "node_modules"

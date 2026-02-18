@@ -40,17 +40,53 @@ export default async function EventDetails({ params }: { params: Promise<{ id: s
           <div className="row justify-content-center">
             <div className="col-12 col-md-8">
               <div className="card border-0 shadow-sm">
-                <div className="ratio ratio-16x9">
-                  <Image
-                    src={event.src ?? "/img/events1.jfif"}
-                    alt={event.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
+              <div
+              id="eventDetailsCarousel"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                {(event.images ?? ["/img/events1.jfif"]).map((img, index) => (
+                  <div
+                    key={index}
+                    className={`carousel-item ${index === 0 ? "active" : ""}`}
+                  >
+                    <div className="ratio ratio-16x9">
+                      <Image
+                        src={img}
+                        alt={event.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        style={{ objectFit: "cover" }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {event.images && event.images.length > 1 && (
+                <>
+                  <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#eventDetailsCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <span className="carousel-control-prev-icon"></span>
+                  </button>
+
+                  <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#eventDetailsCarousel"
+                    data-bs-slide="next"
+                  >
+                    <span className="carousel-control-next-icon"></span>
+                  </button>
+                </>
+              )}
+            </div>
+
                 <div className="card-body">
                   <h1 className="card-title text-primary fw-bold">{event.title}</h1>
                   <time className="text-muted small d-block mb-3">

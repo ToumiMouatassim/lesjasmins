@@ -536,64 +536,96 @@ export interface Event {
   title: string;   
   date?: string;   
   excerpt?: string;
-  src?: string;
+  images: string[];
 }
 
 export const eventsList: Event[] = [
   {
     id: 1,
-    title: "Portes Ouvertes - Hôpital Les Jasmins",
+    title: "Portes Ouvertes - Hôpital Privé Les Jasmins",
     date: "10 Nov 2025",
     excerpt: "Venez découvrir les coulisses de l’Hôpital Les Jasmins lors de notre journée portes ouvertes. Explorez nos différents services médicaux, rencontrez nos équipes soignantes et assistez à des démonstrations de soins et d’équipements de pointe. Une occasion unique de mieux comprendre notre approche centrée sur le patient, la qualité des soins et l’innovation médicale au service de votre santé.",
-    src: "/img/OUVERTURELJ.PNG",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 2,
     title: "Au cœur du laboratoire : Science, Santé et Confiance",
     date: "01 juillet 2025",
     excerpt: "Notre laboratoire a ouvert ses portes au public pour une immersion au cœur de la biologie médicale. Les visiteurs ont pu découvrir nos espaces techniques, nos automates de dernière génération et échanger avec nos biologistes et techniciens. Cette journée a mis en lumière l’importance du diagnostic de précision et notre engagement constant envers la fiabilité, la sécurité et la qualité des analyses.",
-    src: "/img/LaboEvent1.jfif",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 3,
     title: "Semaine Santé & Prévention",
     date: "22 Nov 2025",
     excerpt: "Durant toute une semaine, l’hôpital propose des ateliers interactifs, des conférences animées par des spécialistes et des dépistages gratuits. L’objectif est de sensibiliser le public à la prévention des maladies chroniques comme le diabète, l’hypertension et les maladies cardiovasculaires. Informer, prévenir et accompagner chacun vers de meilleures habitudes de vie est au cœur de cet événement.",
-    src: "/img/SEMAINESP.JPG",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 4,
     title: "Salon Maternité & Bien-Être",
     date: "30 Nov 2025",
     excerpt: "Destiné aux futures mamans et aux jeunes parents, ce salon propose des ateliers pratiques, des séances d’information et des conseils personnalisés dispensés par nos gynécologues, sages-femmes et pédiatres. Suivi de grossesse, préparation à l’accouchement, allaitement et bien-être de bébé : tout est pensé pour accompagner les familles avec sérénité et confiance.",
-    src: "/img/SMB.JPG",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 5,
     title: "Forum Médical Les Jasmins",
     date: "10 Dec 2025",
     excerpt: "Le Forum Médical Les Jasmins réunit des professionnels de santé autour des dernières avancées scientifiques et technologiques. Conférences spécialisées, présentations de nouvelles techniques médicales et échanges interdisciplinaires rythmeront cette journée dédiée au partage des connaissances et à l’amélioration continue des pratiques de soins.",
-    src: "/img/FORUM.JPG",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 6,
     title: "Atelier Nutrition & Bien-Être",
     date: "15 Dec 2025",
     excerpt: "Cet atelier interactif vous aide à comprendre les bases d’une alimentation équilibrée et adaptée à votre mode de vie. Encadré par des professionnels de santé, il aborde la prévention des maladies liées à la nutrition, les bonnes habitudes alimentaires et des conseils pratiques pour améliorer votre énergie, votre forme et votre bien-être au quotidien.",
-    src: "/img/NUTRITION.JPG",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 7,
     title: "Campagne de Vaccination Grippale",
     date: "01 Janvier 2026",
     excerpt: "Participez à notre campagne annuelle de vaccination contre la grippe saisonnière. Cette initiative vise à protéger les personnes les plus vulnérables et à limiter la propagation du virus. Nos équipes assurent un accueil organisé, des informations claires et un accompagnement rassurant pour permettre à chacun de se faire vacciner en toute confiance.",
-    src: "/img/vaccinGrippale.png",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
   {
     id: 8,
     title: "Journée du Don de Sang",
     date: "14 Nov 2025",
     excerpt: "Rejoignez-nous pour une journée solidaire dédiée au don de sang. Chaque don peut sauver plusieurs vies et contribue à maintenir des réserves suffisantes pour les urgences médicales. Des équipes spécialisées seront présentes pour accueillir, informer et accompagner les donneurs dans un cadre sécurisé et convivial.",
-    src: "/img/JOURDONS.PNG",
+    images: [
+      "/img/event1-1.jpg",
+      "/img/event1-2.jpg",
+      "/img/event1-3.jpg",
+    ],
   },
 ];
