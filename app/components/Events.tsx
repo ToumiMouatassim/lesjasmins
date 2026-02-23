@@ -71,7 +71,7 @@ export default function NewsPage() {
                             <div className="ratio ratio-16x9">
                               
                               <Image
-                                src={event.src ?? "/img/placeholder.png"}
+                                src={event.images?.[0] ?? "/img/placeholder.png"}
                                 alt={event.title}
                                 fill
                                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -206,4 +206,4 @@ export default function NewsPage() {
       </section>
     </Fragment>
   );
-}   
+}

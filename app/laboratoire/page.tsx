@@ -141,7 +141,7 @@ const LaboratoirePage: React.FC = () => {
               <div className="col-lg-6 text-center">
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
-                    src="/img/labo2.jpg"
+                    src="/img/labo4.jpg"
                     alt="Notre Histoire"
                     width={800}
                     height={480}
