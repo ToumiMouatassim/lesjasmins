@@ -1,115 +1,49 @@
-import { eventsList} from "@/data/data";
+import { eventsList } from "@/data/data";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function EventDetails({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;  
-  const event = eventsList.find((e) => e.id.toString() === id);
+interface Props {
+  params: {
+    id: string;
+  };
+}
+
+export default function EventDetails({ params }: Props) {
+  const event = eventsList.find(
+    (e) => e.id.toString() === params.id
+  );
 
   if (!event) {
-    notFound();  
+    notFound();
   }
 
   return (
-    <>
-    <section className="breadcrumb-hero position-relative d-flex align-items-center justify-content-center" style={{
-        height: '50vh',
-        minHeight: '150px',
-        backgroundImage: 'url(/img/aboutbg.png)',  
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        zIndex: 999,   
-        paddingTop: '120px',  
-      }}>
-        <div className="overlay position-absolute w-100  " style={{
-          background: 'linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,123,255,0.4))',   
-          zIndex: 2,
-          top: 0,
-          bottom: 0,
-        }}></div>
-        <div className="container text-center position-relative pt-10" style={{ zIndex: 3 }}>
-          <h1 className="fs-48 text-white mb-3 animate__animated animate__fadeInDown">{event.title}</h1>
-          <p className="mt-2 text-white fs-18 animate__animated animate__fadeInUp animate__delay-1s">
-            Restez informé des dernières nouvelles et événements de notre hôpital.
-          </p>
+    <section className="container py-5">
+      <div className="text-center mb-4">
+        <h1 className="fw-bold">{event.title}</h1>
+        <p className="text-muted">{event.date}</p>
+      </div>
+
+      <div className="mb-4">
+        <div className="ratio ratio-16x9">
+          <Image
+            src={event.src && event.src !== "" ? event.src : "/img/placeholder.png"}
+            alt={event.title}
+            fill
+            style={{ objectFit: "cover" }}
+          />
         </div>
-      </section>
-      <section className="bg-light py-5 pt-15">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-8">
-              <div className="card border-0 shadow-sm">
-              <div
-              id="eventDetailsCarousel"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-inner">
-                {(event.images ?? ["/img/events1.jfif"]).map((img, index) => (
-                  <div
-                    key={index}
-                    className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  >
-                    <div className="ratio ratio-16x9">
-                      <Image
-                        src={img}
-                        alt={event.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
+      </div>
 
-              {event.images && event.images.length > 1 && (
-                <>
-                  <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#eventDetailsCarousel"
-                    data-bs-slide="prev"
-                  >
-                    <span className="carousel-control-prev-icon"></span>
-                  </button>
+      <div className="fs-5">
+        <p>{event.excerpt}</p>
 
-                  <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#eventDetailsCarousel"
-                    data-bs-slide="next"
-                  >
-                    <span className="carousel-control-next-icon"></span>
-                  </button>
-                </>
-              )}
-            </div>
-
-                <div className="card-body">
-                  <h1 className="card-title text-primary fw-bold">{event.title}</h1>
-                  <time className="text-muted small d-block mb-3">
-                    {event.date}
-                  </time>
-                  <p className="card-text">{event.excerpt}</p>
-                </div>
-              </div>
-              <div className="mt-4 text-center">
-                <Link href="/" className="btn btn-outline-primary">
-                  Retour à l&apos;Acceuil
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+        {/* Ici tu peux ajouter description longue */}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Ici vous pouvez mettre le contenu détaillé de l’événement.
+        </p>
+      </div>
+    </section>
   );
-}
-
-export async function generateStaticParams() {
-  return eventsList.map((event) => ({
-    id: event.id.toString(),
-  }));
 }

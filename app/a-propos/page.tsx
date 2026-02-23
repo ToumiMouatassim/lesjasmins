@@ -95,9 +95,9 @@ const AboutPage: React.FC = () => {
                     <Image
                       src="/img/apropos1.jpg"
                       alt="Notre Mission"
-                      width={490}
-                      height={340}
-                      // style={{ width: "100%", height: "220px" }}
+                      width={690}
+                      height={470}
+                      style={{ width: "100%", height: "250px" }}
                     />
                   </div>
                 </div>
@@ -167,10 +167,10 @@ const AboutPage: React.FC = () => {
                <div className="col-lg-6 text-center">
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
-                    src="/img/historyabout.png"
+                    src="/img/apropos2.jpg"
                     alt="Notre Histoire"
-                    width={700}
-                    height={480}
+                    width={690}
+                    height={470}
                     style={{ width: "100%", height: "250px" }}
                   />
                 </div>
