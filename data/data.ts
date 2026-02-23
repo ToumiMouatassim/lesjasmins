@@ -549,7 +549,7 @@ export const eventsList: Event[] = [
       '/img/apropos1.jpg',
       '/img/apropos1.jpg',
       '/img/apropos1.jpg',
-      '/img/apropos1.jpg',
+      '/img/apropos2.jpg',
     ],
       
   },
