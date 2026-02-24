@@ -1,64 +1,10 @@
 "use client";
 
-import React, { Fragment, useMemo } from "react";
-import { Carousel } from "react-bootstrap";
+import React, { Fragment} from "react";
 import NextLink from "../components/NextLink";
 import Image from "next/image";
- 
-interface Doctor {
-  id: number;
-  name: string;
-  specialty: string;
-  src: string;
-}
- 
-const initialDoctorsList: Doctor[] = [
-  {
-    id: 1,
-    name: "Dr. Ahmed Benali",
-    specialty: "Chirurgie générale",
-    src: "/img/doctor.jpg",
-  },
-  {
-    id: 2,
-    name: "Dr. Sara El Idrissi",
-    specialty: "Cardiologie",
-    src: "/img/doctor.jpg",
-  },
-  {
-    id: 3,
-    name: "Dr. Mohamed Yassine",
-    specialty: "Orthopédie",
-    src: "/img/doctor.jpg",
-  },
-  {
-    id: 4,
-    name: "Dr. Lina Harir",
-    specialty: "Pédiatrie",
-    src: "/img/doctor.jpg",
-  },
-  {
-    id: 5,
-    name: "Dr. Youssef El Fassi",
-    specialty: "Radiologie",
-    src: "/img/doctor.jpg",
-  },
-  {
-    id: 6,
-    name: "Dr. Nadia Benmansour",
-    specialty: "Gynécologie",
-    src: "/img/doctor.jpg",
-  },
-];
- 
-const chunk = <T,>(arr: T[], size: number): T[][] => {
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
-};
- 
+
 const AboutPage: React.FC = () => {
-  const slides = useMemo(() => chunk(initialDoctorsList, 3), []);
 
   return (
     <Fragment>
@@ -97,7 +43,7 @@ const AboutPage: React.FC = () => {
                       alt="Notre Mission"
                       width={690}
                       height={470}
-                      style={{ width: "100%", height: "300px" }}
+                      style={{ width: "100%", height: "340px" }}
                     />
                   </div>
                 </div>
@@ -167,11 +113,11 @@ const AboutPage: React.FC = () => {
                <div className="col-lg-6 text-center">
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
-                    src="/img/apropos2.jpg"
-                    alt="Notre Histoire"
+                    src="/img/NosValeurs.png"
+                    alt="Nos Valeurs"
                     width={690}
                     height={470}
-                    style={{ width: "100%", height: "250px" }}
+                    style={{ width: "100%", height: "300px" }}
                   />
                 </div>
               </div>
