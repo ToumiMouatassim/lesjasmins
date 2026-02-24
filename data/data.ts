@@ -455,7 +455,7 @@ export const specialitesList: specialite[] = [
   {
     id: 6,
     url: '#',
-    src: '/img/ophtalmo.jpg',
+    src: '/img/ophtalmologie.jpg',
     title: 'Ophtalmologie',
     description:
       'L’ophtalmologie est dédiée au diagnostic et au traitement des maladies des yeux et de la vision, incluant les troubles visuels, les infections oculaires et la chirurgie de la cataracte.',
