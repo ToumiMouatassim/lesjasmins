@@ -9,16 +9,14 @@ import NextLink from "./NextLink";
 export default function NewsPage() {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen size
-  useEffect(() => {
+   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
     check();
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  // Build slides dynamically
-  const slides = useMemo(() => {
+   const slides = useMemo(() => {
     const out: specialite[][] = [];
     const step = isMobile ? 1 : 2;
 
@@ -44,11 +42,11 @@ export default function NewsPage() {
                   key={index}
                   className={`carousel-item ${index === 0 ? "active" : ""}`}
                 >
-                  <div className="row justify-content-center">
+                  <div className="row justify-content-center ">
                     {group.map((specialite) => (
                       <div
                         key={specialite.id}
-                        className="col-12 col-md-6 d-flex justify-content-center"
+                        className="col-12 col-md-5 d-flex justify-content-center"
                       >
                         <div className="card specialite-card border-0 shadow-sm">
                           <Link href={`/Specialite/${specialite.id}`}>
@@ -78,8 +76,7 @@ export default function NewsPage() {
               ))}
             </div>
 
-            {/* Navigation */}
-            <button
+             <button
               className="carousel-control-prev custom-arrow"
               type="button"
               data-bs-target="#specialitesCarousel"
@@ -97,8 +94,7 @@ export default function NewsPage() {
               <span className="carousel-control-next-icon" />
             </button>
 
-            {/* CTA */}
-            <div className="text-center mt-5">
+             <div className="text-center mt-5">
               <NextLink
                 href="/rendez-vous"
                 title="Prendre rendez-vous"
@@ -117,7 +113,6 @@ export default function NewsPage() {
           overflow: hidden;
           transition: 0.3s ease;
         }
-
         .specialite-card:hover {
           transform: translateY(-6px);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
