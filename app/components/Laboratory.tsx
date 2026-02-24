@@ -34,10 +34,8 @@ const LaboratoireSection = () => {
               Analyses médicales fiables et rapides
             </h2>
 
-            <p className="text-muted mb-4">
-              Laboratoire Les Jasmins — Garde 24h/24 & 7j/7
-
-              Le Laboratoire d&apos;Analyses Médicales Les Jasmins assure une garde permanente 24h/24 et 7j/7, afin de répondre à tous vos besoins urgents en analyses médicales, de jour comme de nuit. Équipé de technologies modernes et respectant les normes médicales les plus strictes, notre laboratoire garantit des résultats fiables, rapides et sécurisés.
+            <p className="text-muted mb-6">
+             <b> Laboratoire d&apos;Analyses Médicales Les Jasmins — Garde 24h/24 & 7j/7</b>  assure une garde permanente 24h/24 et 7j/7, afin de répondre à tous vos besoins urgents en analyses médicales, de jour comme de nuit. Équipé de technologies modernes et respectant les normes médicales les plus strictes, notre laboratoire garantit des résultats fiables, rapides et sécurisés.
               Votre santé est notre priorité, même en dehors des horaires habituels. N&apos;hésitez pas à nous contacter ou à vous présenter directement au laboratoire à tout moment.
             </p>
 

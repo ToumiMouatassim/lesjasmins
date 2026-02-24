@@ -546,10 +546,10 @@ export const eventsList: Event[] = [
     date: "10 Nov 2025",
     excerpt: "Venez découvrir les coulisses de l’Hôpital Les Jasmins lors de notre journée portes ouvertes. Explorez nos différents services médicaux, rencontrez nos équipes soignantes et assistez à des démonstrations de soins et d’équipements de pointe. Une occasion unique de mieux comprendre notre approche centrée sur le patient, la qualité des soins et l’innovation médicale au service de votre santé.",
     images: [
-      '/img/apropos2.jpg',
-      '/img/apropos1.jpg',
-      '/img/apropos1.jpg',
-      '/img/apropos2.jpg',
+      '/img/EVENT1-2.jpg',
+      '/img/EVENT1-4.jpg',
+      '/img/lesjasmins.jpg',
+      '/img/EVENT1-1.jpg',
     ],
       
   },
@@ -559,10 +559,10 @@ export const eventsList: Event[] = [
     date: "01 juillet 2025",
     excerpt: "Notre laboratoire a ouvert ses portes au public pour une immersion au cœur de la biologie médicale. Les visiteurs ont pu découvrir nos espaces techniques, nos automates de dernière génération et échanger avec nos biologistes et techniciens. Cette journée a mis en lumière l’importance du diagnostic de précision et notre engagement constant envers la fiabilité, la sécurité et la qualité des analyses.",
     images: [
-      '/img/PEDIATER.jpg',
-      '/img/PEDIATER.jpg',
-      '/img/PEDIATER.jpg',
-      '/img/PEDIATER.jpg',
+      '/img/LaboEvent1.jpg',
+      '/img/labo4.jpg',
+      '/img/labo5.jpg',
+      '/img/labo3.jpg',
     ],
   },
   // {
