@@ -414,7 +414,7 @@ export const specialitesList: specialite[] = [
   {
     id: 1,
     url: '#',
-    src: '/img/radio.jpg',
+    src: '/img/radio2.jpg',
     title: 'Radiologie',
     description:
       'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
@@ -455,7 +455,7 @@ export const specialitesList: specialite[] = [
   {
     id: 6,
     url: '#',
-    src: '/img/ophtalmologie.jpg',
+    src: '/img/ophta.jpg',
     title: 'Ophtalmologie',
     description:
       'L’ophtalmologie est dédiée au diagnostic et au traitement des maladies des yeux et de la vision, incluant les troubles visuels, les infections oculaires et la chirurgie de la cataracte.',
