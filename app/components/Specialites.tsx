@@ -49,7 +49,7 @@ export default function NewsPage() {
                         className="col-12 col-md-5 d-flex justify-content-center"
                       >
                         <div className="card specialite-card border-0 shadow-sm">
-                          <Link href={`/Specialite/${specialite.id}`}>
+                          <Link href={`/specialites/${specialite.id}`}>
                             <div className="ratio ratio-16x9">
                               <Image
                                 src={specialite.src ?? "/img/placeholder.png"}

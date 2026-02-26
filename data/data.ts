@@ -404,7 +404,7 @@ export const servicesdetails: service[] = [
 export interface specialite {
   id: number;
   url?: string;
-  src?: string;
+  images?: string[];
   title: string;
   description: string;
   whatsapp?: string;
@@ -414,7 +414,12 @@ export const specialitesList: specialite[] = [
   {
     id: 1,
     url: '#',
-    src: '/img/radio2.jpg',
+    images: [
+      '/img/radio2.jpg',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Radiologie',
     description:
       'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
@@ -423,7 +428,12 @@ export const specialitesList: specialite[] = [
   {
     id: 2,
     url: '#',
-    src: '/img/reanimation.jpg',
+    images: [
+      '/img/reanimation.jpg',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Réanimation',
     description:
       'La réanimation prend en charge les patients en état critique nécessitant une surveillance continue et des soins intensifs, notamment en cas de détresse respiratoire, cardiaque ou de défaillance multi-organique.',
@@ -431,7 +441,12 @@ export const specialitesList: specialite[] = [
   {
     id: 3,
     url: '#',
-    src: '/img/cardio.jpg',
+    images: [
+      '/img/cardio.jpg',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Cardiologie et explorations cardiaques',
     description:
       'La cardiologie assure la prévention, le diagnostic et le traitement des maladies du cœur et des vaisseaux. Elle comprend des explorations fonctionnelles comme l’ECG, l’échocardiographie et les tests d’effort.',
@@ -439,7 +454,12 @@ export const specialitesList: specialite[] = [
   {
     id: 4,
     url: '#',
-    src: '/img/chirurgie-gen.jpg',
+    images: [
+      '/img/chirurgie-gen.jpg',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],  
     title: 'Chirurgie Générale',
     description:
       'La chirurgie générale prend en charge les interventions chirurgicales de l’abdomen, du système digestif, de la peau et des tissus mous, en utilisant des techniques modernes et sécurisées.',
@@ -447,7 +467,12 @@ export const specialitesList: specialite[] = [
   {
     id: 5,
     url: '#',
-    src: '/img/ORL.JPEG',
+    images: [
+      '/img/ORL.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Otorhinolaryngologie',
     description:
       'La spécialité ORL traite les maladies de l’oreille, du nez et de la gorge, ainsi que les troubles de l’audition, de la voix, de l’équilibre et des sinus.',
@@ -455,7 +480,12 @@ export const specialitesList: specialite[] = [
   {
     id: 6,
     url: '#',
-    src: '/img/ophta.jpg',
+    images: [
+      '/img/ophta.jpg',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Ophtalmologie',
     description:
       'L’ophtalmologie est dédiée au diagnostic et au traitement des maladies des yeux et de la vision, incluant les troubles visuels, les infections oculaires et la chirurgie de la cataracte.',
@@ -463,7 +493,12 @@ export const specialitesList: specialite[] = [
   {
     id: 7,
     url: '#',
-    src: '/img/UROLOGIE.JPEG',
+    images: [
+      '/img/UROLOGIE.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Urologie',
     description:
       'L’urologie prend en charge les pathologies de l’appareil urinaire chez l’homme et la femme, ainsi que les troubles de l’appareil génital masculin, médicaux et chirurgicaux.',
@@ -471,7 +506,12 @@ export const specialitesList: specialite[] = [
   {
     id: 8,
     url: '#',
-    src: '/img/GYNECO.JPEG',
+    images: [
+      '/img/GYNECO.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Gynécologie',
     description:
       'La gynécologie assure le suivi médical de la femme à toutes les étapes de sa vie, incluant la santé reproductive, la grossesse, le dépistage et le traitement des pathologies gynécologiques.',
@@ -479,7 +519,12 @@ export const specialitesList: specialite[] = [
   {
     id: 9,
     url: '#',
-    src: '/img/TRAUMATOLOGIE.JPEG',
+    images: [
+      '/img/TRAUMATOLOGIE.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Traumatologie',
     description:
       'La traumatologie prend en charge les blessures liées aux accidents, chutes et traumatismes, incluant les fractures, luxations et lésions musculo-squelettiques.',
@@ -487,7 +532,12 @@ export const specialitesList: specialite[] = [
   {
     id: 10,
     url: '#',
-    src: '/img/NEURO.JPEG',
+    images: [
+      '/img/NEURO.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Neuro-Chirurgie',
     description:
       'La neurochirurgie traite les affections du système nerveux central et périphérique, notamment le cerveau, la moelle épinière et la colonne vertébrale, par des techniques chirurgicales spécialisées.',
@@ -495,7 +545,12 @@ export const specialitesList: specialite[] = [
   {
     id: 11,
     url: '#',
-    src: '/img/GASTRO.JPEG',
+    images: [
+      '/img/GASTRO.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Gastro-Entérologie',
     description:
       'La gastro-entérologie est spécialisée dans le diagnostic et le traitement des maladies du système digestif, du foie, de l’estomac et des intestins, incluant les explorations endoscopiques.',
@@ -503,7 +558,12 @@ export const specialitesList: specialite[] = [
   {
     id: 12,
     url: '#',
-    src: '/img/PEDIATER.jpg',
+    images: [
+      '/img/PEDIATRIE.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Pédiatrie',
     description:
       'La pédiatrie assure le suivi médical, la prévention et le traitement des maladies chez les nourrissons, enfants et adolescents, dans un environnement adapté et rassurant.',
@@ -511,7 +571,12 @@ export const specialitesList: specialite[] = [
   {
     id: 13,
     url: '#',
-    src: '/img/PNEUMOLOGIE.JPEG',
+    images: [
+      '/img/PNEUMOLOGIE.JPEG',
+      // '/img/EVENT1-4.jpg',
+      // '/img/lesjasmins.jpg',
+      // '/img/EVENT1-1.jpg',
+    ],
     title: 'Pneumologie',
     description:
       'La pneumologie prend en charge les maladies respiratoires telles que l’asthme, les infections pulmonaires et les troubles respiratoires chroniques, avec des explorations fonctionnelles adaptées.',
