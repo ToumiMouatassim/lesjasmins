@@ -52,7 +52,7 @@ export default function NewsPage() {
                           <Link href={`/specialites/${specialite.id}`}>
                             <div className="ratio ratio-16x9">
                               <Image
-                                src={specialite.src ?? "/img/placeholder.png"}
+                                src={specialite.images?.[0] ?? "/img/placeholder.png"}
                                 alt={specialite.title}
                                 fill
                                 style={{ objectFit: "cover" }}
