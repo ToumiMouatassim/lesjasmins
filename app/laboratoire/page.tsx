@@ -142,7 +142,7 @@ const LaboratoirePage: React.FC = () => {
                 <div className="img-wrap shadow rounded overflow-hidden d-inline-block">
                   <Image
                     src="/img/labo4.jpg"
-                    alt="Notre Histoire"
+                    alt="Nos Valeurs"
                     width={800}
                     height={480}
                     style={{ width: "100%", height: "280px" }}
@@ -174,7 +174,7 @@ const LaboratoirePage: React.FC = () => {
           <div className="contact-card shadow p-4 p-md-5">
             <h2 className="text-center mb-4 text-primary">Nous contacter</h2>
 
-            <form action="https://formsubmit.co/TONEMAIL@gmail.com" method="POST">
+            <form action="https://formsubmit.co/laboratoirelesjasmins25@@gmail.com" method="POST">
               <div className="row g-3">
                 <div className="col-md-6">
                   <input type="text" name="nom" placeholder="Nom" required className="form-control form-custom" />

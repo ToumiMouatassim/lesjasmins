@@ -13,6 +13,8 @@ import { SupportSection as Support } from "./components/Support";
 import Services from "./components/Services";
 import ContactSection from "./components/ContactSection";
 import LaboratoireSection from "./components/Laboratory";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 export default function HomePage() {
   return (

@@ -422,7 +422,7 @@ export const specialitesList: specialite[] = [
     ],
     title: 'Radiologie',
     description:
-      'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
+      'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie, Mammographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
     whatsapp: '0612345678',
   },
   {
@@ -559,7 +559,7 @@ export const specialitesList: specialite[] = [
     id: 12,
     url: '#',
     images: [
-      '/img/PEDIATRIE.JPEG',
+      '/img/PEDIATER.JPG',
       // '/img/EVENT1-4.jpg',
       // '/img/lesjasmins.jpg',
       // '/img/EVENT1-1.jpg',
@@ -608,7 +608,7 @@ export const eventsList: Event[] = [
   {
     id: 1,
     title: "Portes Ouvertes - Hôpital Privé Les Jasmins",
-    date: "10 Nov 2025",
+    date: "06 Février 2026",
     excerpt: "Venez découvrir les coulisses de l’Hôpital Les Jasmins lors de notre journée portes ouvertes. Explorez nos différents services médicaux, rencontrez nos équipes soignantes et assistez à des démonstrations de soins et d’équipements de pointe. Une occasion unique de mieux comprendre notre approche centrée sur le patient, la qualité des soins et l’innovation médicale au service de votre santé.",
     images: [
       '/img/EVENT1-2.jpg',
@@ -621,7 +621,7 @@ export const eventsList: Event[] = [
   {
     id: 2,
     title: "Au cœur du laboratoire : Science, Santé et Confiance",
-    date: "01 juillet 2025",
+    date: "11 Mars 2025",
     excerpt: "Notre laboratoire a ouvert ses portes au public pour une immersion au cœur de la biologie médicale. Les visiteurs ont pu découvrir nos espaces techniques, nos automates de dernière génération et échanger avec nos biologistes et techniciens. Cette journée a mis en lumière l’importance du diagnostic de précision et notre engagement constant envers la fiabilité, la sécurité et la qualité des analyses.",
     images: [
       '/img/LaboEvent1.jpg',

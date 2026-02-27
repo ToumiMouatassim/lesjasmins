@@ -3,16 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   turbopack: {},
-  
 
   serverExternalPackages: ["@heroui/react", "@heroui/theme"],
-
-  // i18n: {
-  //   locales: ["fr", "ar"],
-  //   defaultLocale: "fr",
-  // },
-
-  
 
   images: {
     remotePatterns: [
@@ -29,7 +21,7 @@ const nextConfig: NextConfig = {
         pathname: "/storage/**",
       },
     ],
-  },
+  },  
 };
 
 export default nextConfig;
