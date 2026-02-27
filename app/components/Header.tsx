@@ -18,12 +18,12 @@ const Topbar: FC = () => {
             <NextLink href="tel:+212523425820" title="Nous sommes là pour vous 24/24h." />
           </div>
            <div className="d-flex align-items-center ">
-            <NextLink href="mailto:contact@hopitallesjasmins.com" title="" className="uil uil-envelope fs-22 me-2 text-white"/>
+            <NextLink href="mailto:cliniquelesjasminss@gmail.com" title="" className="uil uil-envelope fs-22 me-2 text-white"/>
             <a
-              href="mailto:contact@hopitallesjasmins.com"
+              href="mailto:cliniquelesjasminss@gmail.com"
               className="d-flex align-items-center link-white fw-semibold text-white d-none d-lg-inline"
             >
-              contact@hopitallesjasmins.com
+              cliniquelesjasminss@gmail.com
             </a>
           </div>
 
