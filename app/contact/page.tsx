@@ -46,7 +46,7 @@ Message :
 ${formData.message}
   `;
 
-  const mailtoLink = `mailto:contact@hopitallesjasmins.ma?subject=${encodeURIComponent(
+  const mailtoLink = `mailto:cliniquelesjasminss@gmail.com?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
 
@@ -54,7 +54,7 @@ ${formData.message}
 
    setTimeout(() => {
     window.open(
-      `https://mail.google.com/mail/?view=cm&fs=1&to=contact@hopitallesjasmins.ma&su=${encodeURIComponent(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=cliniquelesjasminss@gmail.com&su=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`,
       '_blank'
@@ -117,7 +117,7 @@ ${formData.message}
                 <div className="mb-4 p-4 bg-white rounded shadow-sm">
                   <p><strong>Adresse :</strong> Béni Mellal , Ouled Ayad , Lotissement Mawra Tranche 1</p>
                   <p><strong>Téléphone :</strong> +212 523425820 </p>
-                  <p><strong>Email :</strong> contact@hopitallesjasmins.ma</p>
+                  <p><strong>Email :</strong> cliniquelesjasminss@gmail.com</p>
                 </div>
 
                 <h3 className="mb-3">Notre emplacement</h3>
