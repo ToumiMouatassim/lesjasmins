@@ -63,8 +63,8 @@ const Footer: FC = () => {
                 </div>
                 <div className="d-flex mb-1 align-items-center">
                   <i className="uil uil-envelope fs-26" />
-                  <Link href="mailto:contact@hopitallesjasmins.com" className="link-body ms-2">
-                    contact@hopitallesjasmins.com
+                  <Link href="mailto:cliniquelesjasminss@gmail.com" className="link-body ms-2">
+                    cliniquelesjasminss@gmail.com
                   </Link>
                 </div>
                 <div className="d-flex align-items-center mb-1">
@@ -88,11 +88,11 @@ const Footer: FC = () => {
 
            <div className="col-lg-3 mt-md-5 mt-lg-0 mt-10">
             <div className="widget">
-              <h3 className="widget-title fs-20 mb-3">Location</h3>
+              <h3 className="widget-title fs-20 mb-3">Localisation</h3>
               <div className="d-flex justify-content-center border rounded">
                 <iframe
                   title="Clinic Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.9917217979664!2d-6.38323502526694!3d32.32469160696611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda3870044d320d7%3A0x40d303fd92d80773!2sH%C3%B4pital%20Priv%C3%A9%20Les%20Jasmins!5e1!3m2!1sfr!2sma!4v1768985951085!5m2!1sfr!2sma"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11255.591011014323!2d-6.377171630135382!3d32.32771514729731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda3870075087b93%3A0x41a4e5c5647399e0!2sH%C3%B4pital%20Priv%C3%A9%20Les%20Jasmins!5e1!3m2!1sfr!2sma!4v1772189666266!5m2!1sfr!2sma"
                   height={250}
                   loading="lazy"
                   style={{ border: 0 }}
