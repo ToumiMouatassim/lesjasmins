@@ -41,7 +41,7 @@ const Topbar: FC = () => {
             {[
               { href: "https://www.facebook.com/", icon: "facebook", label: "Facebook" },
               { href: "https://www.instagram.com/", icon: "instagram", label: "Instagram" },
-              { href: "https://api.whatsapp.com/send?phone=212523425820", icon: "whatsapp", label: "WhatsApp" },
+              { href: "https://api.whatsapp.com/send?phone=212668091193", icon: "whatsapp", label: "WhatsApp" },
             ].map(({ href, icon, label }) => (
             <Link
                 key={icon}
