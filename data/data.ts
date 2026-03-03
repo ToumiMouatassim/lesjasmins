@@ -456,9 +456,10 @@ export const specialitesList: specialite[] = [
     url: '#',
     images: [
       '/img/chirurgie-gen.jpg',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      // '/img/bloc1.jpg',
+      // '/img/bloc2.jpg',
+      // '/img/bloc3.jpg',
+      // '/img/bloc4.jpg',
     ],  
     title: 'Chirurgie Générale',
     description:
