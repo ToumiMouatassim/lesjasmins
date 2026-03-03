@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@emailjs/browser": "^4.4.1",
     "@heroui/alert": "^2.2.27",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",

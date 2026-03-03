@@ -123,7 +123,7 @@ ${formData.message}
                 <h3 className="mb-3">Notre emplacement</h3>
                 <div className="map-container rounded shadow-sm mb-4">
                   <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.9917217979664!2d-6.38323502526694!3d32.32469160696611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda3870044d320d7%3A0x40d303fd92d80773!2sH%C3%B4pital%20Priv%C3%A9%20Les%20Jasmins!5e1!3m2!1sfr!2sma!4v1768985951085!5m2!1sfr!2sma"                     
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11255.591011014323!2d-6.377171630135382!3d32.32771514729731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda3870075087b93%3A0x41a4e5c5647399e0!2sH%C3%B4pital%20Priv%C3%A9%20Les%20Jasmins!5e1!3m2!1sfr!2sma!4v1772189666266!5m2!1sfr!2sma"                  
                   style={{ width: '100%', height: '400px', border: 0 }}
                     allowFullScreen
                     loading="lazy"

@@ -42,7 +42,7 @@ const ContactSection: React.FC = () => {
     ${formData.message}
       `;
 
-      const mailtoLink = `mailto:contact@hopitallesjasmins.com?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:cliniquelesjasminss@gmail.com?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`;
 
@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
 
        setTimeout(() => {
         window.open(
-          `https://mail.google.com/mail/?view=cm&fs=1&to=contact@hopitallesjasmins.com&su=${encodeURIComponent(
+          `https://mail.google.com/mail/?view=cm&fs=1&to=cliniquelesjasminss@gmail.com&su=${encodeURIComponent(
             subject
           )}&body=${encodeURIComponent(body)}`,
           '_blank'
