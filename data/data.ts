@@ -416,9 +416,9 @@ export const specialitesList: specialite[] = [
     url: '#',
     images: [
       '/img/radio2.jpg',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/radio4.jpg',
+      '/img/radio10.jpg',
+      '/img/radio6.jpg',
     ],
     title: 'Radiologie',
     description:
@@ -430,9 +430,9 @@ export const specialitesList: specialite[] = [
     url: '#',
     images: [
       '/img/reanimation.jpg',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/rea1.jpg',
+      '/img/rea2.jpg',
+      '/img/rea3.jpg',
     ],
     title: 'Réanimation',
     description:
@@ -443,9 +443,9 @@ export const specialitesList: specialite[] = [
     url: '#',
     images: [
       '/img/cardio.jpg',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/cardio1.jpg',
+      '/img/cardio2.jpg',
+      '/img/cardio3.jpg',
     ],
     title: 'Cardiologie et explorations cardiaques',
     description:
