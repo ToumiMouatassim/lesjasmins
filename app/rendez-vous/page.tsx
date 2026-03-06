@@ -200,7 +200,7 @@ ${message}
 
     const subject = 'Nouveau rendez-vous';
     const body = buildMessage();
-    window.location.href = `mailto:votreemail@gmail.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:cliniquelesjasminss@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
   };

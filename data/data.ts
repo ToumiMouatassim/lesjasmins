@@ -455,10 +455,10 @@ export const specialitesList: specialite[] = [
     id: 4,
     url: '#',
     images: [
+      '/img/les jasmins-26.jpg',
       '/img/chirurgie-gen.jpg',
-      // '/img/bloc1.jpg',
-      // '/img/bloc2.jpg',
-      // '/img/bloc3.jpg',
+      '/img/les jasmins-29.jpg',
+      '/img/les jasmins-32.jpg',
       // '/img/bloc4.jpg',
     ],  
     title: 'Chirurgie Générale',
@@ -483,9 +483,10 @@ export const specialitesList: specialite[] = [
     url: '#',
     images: [
       '/img/ophta.jpg',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-34.jpg',
+      '/img/les jasmins-36.jpg',
+      '/img/les jasmins-37.jpg',  
+      '/img/les jasmins-35.jpg',
     ],
     title: 'Ophtalmologie',
     description:
@@ -508,10 +509,12 @@ export const specialitesList: specialite[] = [
     id: 8,
     url: '#',
     images: [
-      '/img/GYNECO.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-73.jpg',
+      '/img/les jasmins-77.jpg',
+      '/img/les jasmins-72.jpg',
+      '/img/les jasmins-70.jpg',
+      '/img/les jasmins-76.jpg',
+
     ],
     title: 'Gynécologie',
     description:

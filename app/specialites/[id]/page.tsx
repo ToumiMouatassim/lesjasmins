@@ -149,7 +149,7 @@ export default function SpecialiteDetail({ params }: Props) {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="btn btn-light position-absolute top-0 end-0 m-4"
+            className="btn position-absolute top-0 end-0 m-4"
             onClick={() => setSelectedImage(null)}
           >
             ✕

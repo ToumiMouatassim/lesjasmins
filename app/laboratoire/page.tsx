@@ -174,30 +174,59 @@ const LaboratoirePage: React.FC = () => {
           <div className="contact-card shadow p-4 p-md-5">
             <h2 className="text-center mb-4 text-primary">Nous contacter</h2>
 
-            <form action="https://formsubmit.co/laboratoirelesjasmins25@@gmail.com" method="POST">
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <input type="text" name="nom" placeholder="Nom" required className="form-control form-custom" />
-                </div>
-                <div className="col-md-6">
-                  <input type="text" name="prenom" placeholder="Prénom" required className="form-control form-custom" />
-                </div>
-                <div className="col-12">
-                  <input type="email" name="email" placeholder="Email" required className="form-control form-custom" />
-                </div>
-                <div className="col-12">
-                  <input type="tel" name="telephone" placeholder="Téléphone" className="form-control form-custom" />
-                </div>
-                <div className="col-12">
-                  <textarea name="message" rows={4} placeholder="Votre message..." required className="form-control form-custom"></textarea>
-                </div>
-                <div className="col-12 text-center">
-                  <button type="submit" className="btn btn-primary px-5 py-2 mt-2">
-                    Envoyer le message
-                  </button>
-                </div>
-              </div>
-            </form>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+
+                const form = e.target as HTMLFormElement;
+                const nom = (form.elements.namedItem("nom") as HTMLInputElement).value;
+                const prenom = (form.elements.namedItem("prenom") as HTMLInputElement).value;
+                const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+                const telephone = (form.elements.namedItem("telephone") as HTMLInputElement).value;
+                const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+
+                const subject = encodeURIComponent("Nouveau message du site");
+                const body = encodeURIComponent(
+                  `Nom: ${nom}
+            Prénom: ${prenom}
+            Email: ${email}
+            Téléphone: ${telephone}
+
+            Message:
+            ${message}`
+                );
+
+                window.location.href = `mailto:laboratoirelesjasmins25@gmail.com?subject=${subject}&body=${body}`;
+              }}
+            >
+  <div className="row g-3">
+    <div className="col-md-6">
+      <input type="text" name="nom" placeholder="Nom" required className="form-control form-custom" />
+    </div>
+
+    <div className="col-md-6">
+      <input type="text" name="prenom" placeholder="Prénom" required className="form-control form-custom" />
+    </div>
+
+    <div className="col-12">
+      <input type="email" name="email" placeholder="Email" required className="form-control form-custom" />
+    </div>
+
+    <div className="col-12">
+      <input type="tel" name="telephone" placeholder="Téléphone" className="form-control form-custom" />
+    </div>
+
+    <div className="col-12">
+      <textarea name="message" rows={4} placeholder="Votre message..." required className="form-control form-custom"></textarea>
+    </div>
+
+    <div className="col-12 text-center">
+      <button type="submit" className="btn btn-primary px-5 py-2 mt-2">
+        Envoyer le message
+      </button>
+    </div>
+  </div>
+</form>
           </div>
         </section>
 
