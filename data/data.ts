@@ -241,7 +241,7 @@ export const servicesdetails: service[] = [
     Nous proposons un accompagnement personnalisé, combinant expertise médicale, suivi psychologique et conseils sur la prévention, la fertilité et la santé reproductive.`,
   },
   {
-    id: 6,
+    id: 24,
     url: '#',
     src: '/img/Cardiologie.jpeg',
     title: 'Cardiologie',
@@ -384,7 +384,13 @@ export const servicesdetails: service[] = [
   //   title: 'Kinésithérapie & Rééducation',
   //   description: 'Service dédié à la rééducation fonctionnelle après une intervention chirurgicale, un accident ou une pathologie chronique. Les soins visent à restaurer la mobilité, renforcer les capacités physiques et favoriser une récupération durable.',
   // },
-  
+  {
+    id: 6,
+    url: '#',
+    src: '/img/Cardiologie.jpeg',
+    title: 'Cardiologie interventionnelle',
+    description: 'Service spécialisé dans le diagnostic et le traitement des maladies cardiovasculaires à l’aide de techniques mini-invasives. Les cardiologues réalisent des procédures comme le cathétérisme cardiaque, l’angioplastie et la pose de stents afin de débloquer ou élargir les artères coronaires. Ces interventions permettent de traiter certaines pathologies du cœur sans recourir à une chirurgie lourde.'
+  },
 ];
 
 
