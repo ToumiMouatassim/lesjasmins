@@ -384,20 +384,7 @@ export const servicesdetails: service[] = [
   //   title: 'Kinésithérapie & Rééducation',
   //   description: 'Service dédié à la rééducation fonctionnelle après une intervention chirurgicale, un accident ou une pathologie chronique. Les soins visent à restaurer la mobilité, renforcer les capacités physiques et favoriser une récupération durable.',
   // },
-  {
-    id: 25,
-    url: '#',
-    src: '/img/Dietetique.jpeg',
-    title: 'Nutrition & Diététique',
-    description: 'Accompagnement nutritionnel personnalisé pour prévenir et traiter les troubles alimentaires et métaboliques. Le service propose des plans alimentaires adaptés aux besoins médicaux, favorisant une alimentation équilibrée et un meilleur état de santé.',
-  },
-  {
-    id: 26,
-    url: '#',
-    src: '/img/Psychologie.jpeg',
-    title: 'Psychologie & Santé mentale',
-    description: 'Accompagnement psychologique et soutien émotionnel des patients confrontés à des difficultés personnelles, médicales ou émotionnelles. Le service vise à améliorer le bien-être mental, renforcer les capacités d’adaptation et favoriser un équilibre psychologique durable.',
-  },
+  
 ];
 
 
@@ -459,7 +446,6 @@ export const specialitesList: specialite[] = [
       '/img/chirurgie-gen.jpg',
       '/img/les jasmins-29.jpg',
       '/img/les jasmins-32.jpg',
-      // '/img/bloc4.jpg',
     ],  
     title: 'Chirurgie Générale',
     description:
@@ -469,10 +455,10 @@ export const specialitesList: specialite[] = [
     id: 5,
     url: '#',
     images: [
-      '/img/ORL.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-41.jpg',
+      '/img/les jasmins-44.jpg',
+      '/img/les jasmins-42.jpg',
+      '/img/les jasmins-40.jpg',
     ],
     title: 'Otorhinolaryngologie',
     description:
@@ -496,10 +482,10 @@ export const specialitesList: specialite[] = [
     id: 7,
     url: '#',
     images: [
-      '/img/UROLOGIE.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-26.jpg',
+      '/img/les jasmins-29.jpg',
+      '/img/les jasmins-32.jpg',
+      '/img/les jasmins-33.jpg',
     ],
     title: 'Urologie',
     description:
@@ -524,10 +510,10 @@ export const specialitesList: specialite[] = [
     id: 9,
     url: '#',
     images: [
-      '/img/TRAUMATOLOGIE.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-45.jpg',
+      '/img/les jasmins-46.jpg',
+      '/img/les jasmins-47.jpg',
+      '/img/les jasmins-48.jpg',
     ],
     title: 'Traumatologie',
     description:
@@ -537,10 +523,10 @@ export const specialitesList: specialite[] = [
     id: 10,
     url: '#',
     images: [
-      '/img/NEURO.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-47.jpg',
+      '/img/les jasmins-45.jpg',
+      '/img/les jasmins-46.jpg',
+      '/img/les jasmins-48.jpg',
     ],
     title: 'Neuro-Chirurgie',
     description:
@@ -550,10 +536,9 @@ export const specialitesList: specialite[] = [
     id: 11,
     url: '#',
     images: [
-      '/img/GASTRO.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-81.jpg',
+      '/img/les jasmins-79.jpg',
+      '/img/les jasmins-82.jpg',
     ],
     title: 'Gastro-Entérologie',
     description:
@@ -563,10 +548,9 @@ export const specialitesList: specialite[] = [
     id: 12,
     url: '#',
     images: [
-      '/img/PEDIATER.JPG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/neonat1.jpg',
+      '/img/les jasmins-141.jpg',
+      '/img/les jasmins-143.jpg',
     ],
     title: 'Pédiatrie',
     description:
@@ -576,10 +560,9 @@ export const specialitesList: specialite[] = [
     id: 13,
     url: '#',
     images: [
-      '/img/PNEUMOLOGIE.JPEG',
-      // '/img/EVENT1-4.jpg',
-      // '/img/lesjasmins.jpg',
-      // '/img/EVENT1-1.jpg',
+      '/img/les jasmins-79.jpg',
+      '/img/les jasmins-81.jpg',
+      '/img/les jasmins-82.jpg',
     ],
     title: 'Pneumologie',
     description:
