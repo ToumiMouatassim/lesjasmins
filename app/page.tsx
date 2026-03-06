@@ -154,7 +154,7 @@ export default function HomePage() {
         </section>
 
         {/* Specialites */}
-        <section className="wrapper bg-light py-0 py-md-10">
+        <section id="specialites" className="wrapper bg-light py-0 py-md-10">
           <div className="container text-center">
             <div className="col-md-10 col-lg-8 mx-auto">
               <h2
