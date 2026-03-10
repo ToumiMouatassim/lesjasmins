@@ -6,193 +6,6 @@ export interface service {
   description: string;
 }
 
-export const servicesList: service[] = [
-  {
-    id: 1,
-    url: '#',
-    src: '/img/urgences.jpeg',
-    title: "Service d'Urgences 24h/24 et 7j/7",
-    description: `En cas d’urgence, n’hésitez pas à nous contacter immédiatement. Notre priorité est votre santé et votre bien-être.`,
-  }
-,
-  {
-    id: 2,
-    url: '#',
-    src: '/img/consultation.png',
-    title: 'Consultations médicales',
-    description: `Nos consultations sont disponibles sur rendez-vous, et nous proposons également des consultations d'urgence pour des situations imprévues.
-    Prenez soin de votre santé dès aujourd'hui et contactez-nous pour prendre rendez-vous !`,
-  },
-  {
-    id: 3,
-    url: '#',
-    src: '/img/Pédiatrie.jpg',
-    title: 'Pédiatrie',
-    description: `Le bien-être de vos enfants est notre priorité. N'hésitez pas à prendre rendez-vous avec notre pédiatre pour des consultations régulières ou toute question de santé.`,
-  },
-  {
-    id: 4,
-    url: '#',
-    src: '/img/radiologie.jpeg',
-    title: 'Radiologie & Imagerie médicale',
-    description: `Que vous ayez besoin d'un contrôle de routine ou d’un examen spécialisé, notre service de radiologie est à votre disposition pour vous offrir un diagnostic précis et rapide. Contactez-nous dès aujourd'hui pour prendre rendez-vous.`,
-  },
-  {
-    id: 5,
-    url: '#',
-    src: '/img/Gyneco.jpeg',
-    title: 'Gynécologie & Obstétrique',
-    description: `Que ce soit pour un suivi régulier, un besoin de conseils ou une consultation spécialisée, notre service de gynécologie et obstétrique est là pour vous offrir des soins adaptés à chaque étape de votre vie. Contactez-nous pour prendre rendez-vous.`,
-  },
-  {
-    id: 6,
-    url: '#',
-    src: '/img/Cardiologie.jpeg',
-    title: 'Cardiologie',
-    description: `Que vous soyez à la recherche d'un suivi régulier ou d'un traitement spécifique, notre service de cardiologie est là pour vous offrir une prise en charge complète et de qualité. Contactez-nous dès maintenant pour prendre rendez-vous.`,
-  },
-  {
-    id: 7,
-    url: '#',
-    src: '/img/Pneumologie.jpeg',
-    title: 'Pneumologie',
-    description: `Que ce soit pour un simple contrôle, un diagnostic spécifique ou un suivi médical, notre service de pneumologie est là pour vous accompagner dans la gestion de votre santé respiratoire. Contactez-nous pour prendre rendez-vous.`,
-  },
-  {
-    id: 8,
-    url: '#',
-    src: '/img/Neurologie.jpeg',
-    title: 'Neurologie',
-    description: `Si vous ressentez des symptômes neurologiques inquiétants ou si vous avez besoin d'un suivi pour une pathologie existante, notre service de neurologie est là pour vous accompagner. Contactez-nous dès aujourd'hui pour prendre rendez-vous.`,
-  },
-  {
-    id: 9,
-    url: '#',
-    src: '/img/Gastro.jpeg',
-    title: 'Gastro-entérologie',
-    description: `Que vous souffriez de symptômes digestifs réguliers ou que vous ayez besoin d'un suivi pour une pathologie existante, notre service de gastro-entérologie est à votre disposition pour vous fournir un diagnostic précis et des solutions adaptées à vos besoins. Contactez-nous dès maintenant pour prendre rendez-vous.`,
-  },
-  {
-    id: 10,
-    url: '#',
-    src: '/img/Urologie.jpeg',
-    title: 'Urologie',
-    description: `Si vous avez des problèmes urinaires ou reproducteurs, notre service d'urologie est là pour vous accompagner à chaque étape. Contactez-nous dès maintenant pour prendre rendez-vous et obtenir des soins adaptés à vos besoins.`,
-  },
-  {
-    id: 11,
-    url: '#',
-    src: '/img/Néphrologie.jpeg',
-    title: 'Néphrologie',
-    description: `Que vous soyez à la recherche d'un diagnostic, d'un traitement ou d'un suivi pour une pathologie rénale, notre service de néphrologie est là pour vous accompagner. Contactez-nous dès maintenant pour prendre rendez-vous et obtenir des soins adaptés à vos besoins.`,
-  },
-  {
-    id: 12,
-    url: '#',
-    src: '/img/Endocrinologie.jpeg',
-    title: 'Endocrinologie',
-    description: `Que vous ayez besoin de conseils, d'un diagnostic ou d'un suivi pour un trouble hormonal, notre service d'endocrinologie est à votre disposition pour vous offrir des soins adaptés à vos besoins. Contactez-nous dès maintenant pour prendre rendez-vous.`,
-  },
-  {
-    id: 13,
-    url: '#',
-    src: '/img/Rhumatologie.jpeg',
-    title: 'Rhumatologie',
-    description: `Prenez soin de vos articulations et de vos muscles dès aujourd'hui Que vous souffriez de douleurs articulaires, de maladies chroniques ou que vous ayez besoin d'un suivi spécialisé, notre service de rhumatologie est là pour vous accompagner. Contactez-nous dès maintenant pour prendre rendez-vous et obtenir des soins adaptés à vos besoins.`
-  },
-  // {
-  //   id: 14,
-  //   url: '#',
-  //   src: '/img/Oncologie.jpeg',
-  //   title: 'Oncologie',
-  //   description: `Si vous êtes concerné par le cancer ou si vous souhaitez obtenir des informations ou un suivi médical, notre service d'oncologie est à votre disposition pour vous offrir les meilleurs soins et un accompagnement personnalisé. Contactez-nous pour prendre rendez-vous et bénéficier d’une prise en charge complète.`,
-  // },
-  {
-    id: 15,
-    url: '#',
-    src: '/img/Hospitalisation.jpeg',
-    title: 'Hospitalisation & Soins continus',
-    description: `Si vous ou un proche avez besoin d’une hospitalisation ou de soins continus, notre service est là pour vous fournir les meilleurs soins et un suivi constant. Contactez-nous dès maintenant pour prendre rendez-vous ou pour toute information complémentaire.`,
-  },
-  {
-    id: 16,
-    url: '#',
-    src: '/img/ChirurgieGenerale.jpeg',
-    title: 'Chirurgie Générale',
-    description: `Si vous ou un proche avez besoin d'une intervention chirurgicale, notre service de chirurgie générale est là pour vous fournir des soins chirurgicaux de qualité. Contactez-nous dès maintenant pour prendre rendez-vous ou pour toute information complémentaire.`,
-  },
-  {
-    id: 17,
-    url: '#',
-    src: '/img/Orthopedie.jpeg',
-    title: 'Chirurgie Orthopédique & Traumatologie',
-    description: `Que vous souffriez de douleurs chroniques, d'une blessure récente ou que vous ayez besoin d'une intervention chirurgicale, notre service de chirurgie orthopédique et traumatologie est là pour vous fournir des soins adaptés à vos besoins. Contactez-nous dès maintenant pour prendre rendez-vous.`,
-  },
-  {
-    id: 18,
-    url: '#',
-    src: '/img/Ophtalmologie.jpeg',
-    title: 'Ophtalmologie',
-    description: `Que ce soit pour une consultation de routine, un diagnostic spécialisé ou une intervention chirurgicale, notre service d'ophtalmologie est là pour vous offrir les meilleurs soins pour votre santé oculaire. Contactez-nous dès maintenant pour prendre rendez-vous.`,
-  },
-  {
-    id: 19,
-    url: '#',
-    src: '/img/ORL.jpeg',
-    title: 'ORL (Oto-Rhino-Laryngologie)',
-    description: `Si vous avez des problèmes liés à vos oreilles, nez ou gorge, notre service d'ORL est là pour vous offrir les meilleurs soins et solutions. Contactez-nous dès maintenant pour prendre rendez-vous et obtenir un diagnostic précis et un traitement adapté à vos besoins.`,
-  },
-  {
-    id: 20,
-    url: '#',
-    src: '/img/Neurochirurgie.jpeg',
-    title: 'Neurochirurgie',
-    description: `Si vous ou un proche souffrez d'une pathologie nécessitant une intervention neurochirurgicale, notre service est là pour vous fournir les meilleurs soins. Contactez-nous dès maintenant pour prendre rendez-vous et discuter des options de traitement adaptées à vos besoins.`,
-  },
-  {
-    id: 21,
-    url: '#',
-    src: '/img/Laboratoire.jpeg',
-    title: 'Laboratoire d’Analyses Médicales',
-    description: `Faites confiance à notre laboratoire pour vos analyses médicales Que vous ayez besoin d’un bilan de santé de routine ou d’une analyse spécialisée, notre laboratoire est à votre disposition pour vous offrir des résultats précis et fiables. Contactez-nous dès maintenant pour prendre rendez-vous ou pour toute information supplémentaire sur nos services.`,
-  },
-  {
-    id: 22,
-    url: '#',
-    src: '/img/Reanimation.jpeg',
-    title: 'Réanimation & Soins intensifs',
-    description: `En cas de besoin en soins intensifs, notre service de réanimation est là pour vous offrir des soins urgents et spécialisés. Si vous ou un proche avez besoin de soins intensifs, contactez-nous pour toute information complémentaire ou pour connaître nos protocoles d’admission.`,
-  },
-  {
-    id: 23,
-    url: '#',
-    src: '/img/Pharmacie.jpeg',
-    title: 'Pharmacie Hospitalière',
-    description: `Que vous soyez hospitalisé pour une maladie aiguë, une chirurgie ou une prise en charge chronique, notre service de pharmacie hospitalière vous accompagne pour garantir l'optimisation et la sécurité de vos traitements. Contactez-nous pour toute information complémentaire ou pour connaître nos services spécifiques.`,
-  },
-  // {
-  //   id: 24,
-  //   url: '#',
-  //   src: '/img/Kinesitherapie.jpeg',
-  //   title: 'Kinésithérapie & Rééducation',
-  //   description: 'Réadaptation fonctionnelle après une maladie, un accident ou une intervention.',
-  // },
-  // {
-  //   id: 25,
-  //   url: '#',
-  //   src: '/img/Dietetique.jpeg',
-  //   title: 'Nutrition & Diététique',
-  //   description: 'Suivi nutritionnel et accompagnement diététique personnalisé.',
-  // },
-  // {
-  //   id: 26,
-  //   url: '#',
-  //   src: '/img/Psychologie.jpeg',
-  //   title: 'Psychologie & Santé mentale',
-  //   description: 'Accompagnement psychologique et soutien émotionnel des patients.',
-  // },
-];
-
 export const servicesdetails: service[] = [
   {
     id: 1,
@@ -400,7 +213,6 @@ export interface specialite {
   images?: string[];
   title: string;
   description: string;
-  whatsapp?: string;
 }
 
 export const specialitesList: specialite[] = [
@@ -417,7 +229,6 @@ export const specialitesList: specialite[] = [
     title: 'Radiologie',
     description:
       'La radiologie médicale permet le diagnostic précis des maladies grâce à l’imagerie médicale (radiographie, scanner, IRM, échographie, Mammographie). Elle joue un rôle essentiel dans la détection, le suivi et l’orientation thérapeutique des patients.',
-    whatsapp: '0612345678',
   },
   {
     id: 2,
@@ -585,6 +396,7 @@ export const aboutUsFooter = [
   { id: 3, title: 'Services' ,url:'/services' },
   { id: 4, title: 'Actualités',url:'/actualites' },
   { id: 5, title: 'Recrutement',url:'/recrutement' },
+  { id: 6, title: 'Laboratoire',url:'/laboratoire' },
   { id: 7, title: 'Contact',url:'/contact' },
   { id: 8, title: 'rendez-vous',url:'/rendez-vous' },
 ];
@@ -624,76 +436,4 @@ export const eventsList: Event[] = [
       '/img/les jasmins-198.jpg',
     ],
   },
-  // {
-  //   id: 3,
-  //   title: "Semaine Santé & Prévention",
-  //   date: "22 Nov 2025",
-  //   excerpt: "Durant toute une semaine, l’hôpital propose des ateliers interactifs, des conférences animées par des spécialistes et des dépistages gratuits. L’objectif est de sensibiliser le public à la prévention des maladies chroniques comme le diabète, l’hypertension et les maladies cardiovasculaires. Informer, prévenir et accompagner chacun vers de meilleures habitudes de vie est au cœur de cet événement.",
-  //   images: [
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //   ],
-  // },
-  // {
-  //   id: 4,
-  //   title: "Salon Maternité & Bien-Être",
-  //   date: "30 Nov 2025",
-  //   excerpt: "Destiné aux futures mamans et aux jeunes parents, ce salon propose des ateliers pratiques, des séances d’information et des conseils personnalisés dispensés par nos gynécologues, sages-femmes et pédiatres. Suivi de grossesse, préparation à l’accouchement, allaitement et bien-être de bébé : tout est pensé pour accompagner les familles avec sérénité et confiance.",
-  //   images: [
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //   ],
-  // },
-  // {
-  //   id: 5,
-  //   title: "Forum Médical Les Jasmins",
-  //   date: "10 Dec 2025",
-  //   excerpt: "Le Forum Médical Les Jasmins réunit des professionnels de santé autour des dernières avancées scientifiques et technologiques. Conférences spécialisées, présentations de nouvelles techniques médicales et échanges interdisciplinaires rythmeront cette journée dédiée au partage des connaissances et à l’amélioration continue des pratiques de soins.",
-  //   images: [
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //   ],
-  // },
-  // {
-  //   id: 6,
-  //   title: "Atelier Nutrition & Bien-Être",
-  //   date: "15 Dec 2025",
-  //   excerpt: "Cet atelier interactif vous aide à comprendre les bases d’une alimentation équilibrée et adaptée à votre mode de vie. Encadré par des professionnels de santé, il aborde la prévention des maladies liées à la nutrition, les bonnes habitudes alimentaires et des conseils pratiques pour améliorer votre énergie, votre forme et votre bien-être au quotidien.",
-  //   images: [
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //   ],
-  // },
-  // {
-  //   id: 7,
-  //   title: "Campagne de Vaccination Grippale",
-  //   date: "01 Janvier 2026",
-  //   excerpt: "Participez à notre campagne annuelle de vaccination contre la grippe saisonnière. Cette initiative vise à protéger les personnes les plus vulnérables et à limiter la propagation du virus. Nos équipes assurent un accueil organisé, des informations claires et un accompagnement rassurant pour permettre à chacun de se faire vacciner en toute confiance.",
-  //   images: [
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //   ],
-  // },
-  // {
-  //   id: 8,
-  //   title: "Journée du Don de Sang",
-  //   date: "14 Nov 2025",
-  //   excerpt: "Rejoignez-nous pour une journée solidaire dédiée au don de sang. Chaque don peut sauver plusieurs vies et contribue à maintenir des réserves suffisantes pour les urgences médicales. Des équipes spécialisées seront présentes pour accueillir, informer et accompagner les donneurs dans un cadre sécurisé et convivial.",
-  //   images: [
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //     '/img/PEDIATER.jpg',
-  //   ],
-  // },
 ];
