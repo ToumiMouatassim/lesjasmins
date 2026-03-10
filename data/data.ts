@@ -412,6 +412,7 @@ export const specialitesList: specialite[] = [
       '/img/radio4.jpg',
       '/img/radio10.jpg',
       '/img/radio6.jpg',
+      '/img/les jasmins-89.jpg',
     ],
     title: 'Radiologie',
     description:

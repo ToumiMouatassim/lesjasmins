@@ -13,6 +13,7 @@ import { ReactNode, useEffect, useState, Fragment } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import VideoPopUp from "./components/PopUp";
 import ThemeProvider from "../public/theme/ThemeProvider";
 import Script from "next/script";
 import Header from "./components/Header";
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <ThemeProvider>
           <ToastContainer position="bottom-right" autoClose={5000} />
+          <VideoPopUp />
           {loading ? (
             <div className="page-loader" />
           ) : (
