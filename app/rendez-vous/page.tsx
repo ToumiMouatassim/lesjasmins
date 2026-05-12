@@ -252,13 +252,11 @@ ${message}
         <div className="row">
           <div className="col-lg-6">
             <h2 className="mb-4">Calendrier des rendez-vous</h2>
-
             {!selectedDate && (
-              <div className="alert alert-danger py-2">
-                Veuillez sélectionner une date.
+              <div className="alert alert-danger d-flex align-items-center gap-2">
+                <span>Veuillez sélectionner une date avant de continuer.</span>
               </div>
             )}
-
             <Calendar
               reservedDates={reservedDates}
               selectedDate={selectedDate}
