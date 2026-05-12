@@ -251,6 +251,21 @@ ${message}
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
+            <h2 className="mb-4">Calendrier des rendez-vous</h2>
+
+            {!selectedDate && (
+              <div className="alert alert-danger py-2">
+                Veuillez sélectionner une date.
+              </div>
+            )}
+
+            <Calendar
+              reservedDates={reservedDates}
+              selectedDate={selectedDate}
+              setSelectedDate={setSelectedDate}
+            />
+          </div>
+          <div className="col-lg-6">
             <h2 className="mb-4">Prendre Rendez-vous</h2>
             <form>
               <input
@@ -312,14 +327,7 @@ ${message}
               </div>
             </form>
           </div>
-          <div className="col-lg-6">
-            <h2 className="mb-4">Calendrier des rendez-vous</h2>
-            <Calendar
-              reservedDates={reservedDates}
-              selectedDate={selectedDate}
-              setSelectedDate={setSelectedDate}
-            />
-          </div>
+          
         </div>
         <div className="text-center mt-5">
           <NextLink

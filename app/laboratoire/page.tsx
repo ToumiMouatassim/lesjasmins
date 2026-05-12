@@ -20,7 +20,7 @@ const LaboratoirePage: React.FC = () => {
     "Génétique médicale",
     "Cytogénétique",
     "Histocompatibilité",
-    "Cytométrie en flux",
+    "Cytométrie en flux (CMF)",
   ];
 
  
