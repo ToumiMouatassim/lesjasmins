@@ -33,12 +33,6 @@
     position: relative !important;
   }
 
-  .hero {
-    background-image: url('/img/hero-bg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   .hero-text {
     max-width: 100% !important;
     align-items: flex-end;
