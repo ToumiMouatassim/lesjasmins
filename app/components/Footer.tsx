@@ -63,8 +63,8 @@ const Footer: FC = () => {
                 </div>
                 <div className="d-flex mb-1 align-items-center">
                   <i className="uil uil-envelope fs-26" />
-                  <Link href="mailto:cliniquelesjasminss@gmail.com" className="link-body ms-2">
-                    cliniquelesjasminss@gmail.com
+                  <Link href="mailto:hopitalprivelesjasmins@gmail.com" className="link-body ms-2">
+                    hopitalprivelesjasmins@gmail.com
                   </Link>
                 </div>
                 <div className="d-flex align-items-center mb-1">

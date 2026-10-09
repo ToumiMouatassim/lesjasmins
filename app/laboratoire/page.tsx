@@ -1,14 +1,16 @@
 "use client";
 
-import React, { Fragment, useMemo } from "react";
-import { Carousel } from "react-bootstrap";
-import NextLink from "../components/NextLink";
+import React, { Fragment, useState } from "react";
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa6";
+import { toast } from "react-toastify";
+import { submitForm } from "../lib/email";
 
 
 
 const LaboratoirePage: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const specialities = [
     "Biochimie",
     "Chimie analytique",
@@ -177,58 +179,69 @@ const LaboratoirePage: React.FC = () => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
+                setIsLoading(true);
 
-                const form = e.target as HTMLFormElement;
-                const nom = (form.elements.namedItem("nom") as HTMLInputElement).value;
-                const prenom = (form.elements.namedItem("prenom") as HTMLInputElement).value;
-                const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-                const telephone = (form.elements.namedItem("telephone") as HTMLInputElement).value;
-                const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+                const form = e.currentTarget;
+                const nom = (form.elements.namedItem("nom") as HTMLInputElement).value.trim();
+                const prenom = (form.elements.namedItem("prenom") as HTMLInputElement).value.trim();
+                const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
+                const telephone = (form.elements.namedItem("telephone") as HTMLInputElement).value.trim();
+                const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value.trim();
 
-                const subject = encodeURIComponent("Nouveau message du site");
-                const body = encodeURIComponent(
-                  `Nom: ${nom}
-            Prénom: ${prenom}
-            Email: ${email}
-            Téléphone: ${telephone}
+                if (!nom || !prenom || !email || !telephone || !message) {
+                  toast.error("Veuillez remplir tous les champs obligatoires.");
+                  setIsLoading(false);
+                  return;
+                }
 
-            Message:
-            ${message}`
+                const whatsappNumber = "212616189323";
+                const whatsappMessage = `Bonjour, je souhaite vous contacter.\n\nNom: ${nom}\nPrénom: ${prenom}\nEmail: ${email}\nTéléphone: ${telephone}\n\nMessage:\n${message}`;
+
+                window.open(
+                  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+                  "_blank",
+                  "noopener,noreferrer"
                 );
 
-                window.location.href = `mailto:laboratoirelesjasmins25@gmail.com?subject=${subject}&body=${body}`;
+                toast.success("Redirection vers WhatsApp effectuée.");
+                form.reset();
+                setIsLoading(false);
               }}
             >
-  <div className="row g-3">
-    <div className="col-md-6">
-      <input type="text" name="nom" placeholder="Nom" required className="form-control form-custom" />
-    </div>
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <input type="text" name="nom" placeholder="Nom" required className="form-control form-custom" />
+                </div>
 
-    <div className="col-md-6">
-      <input type="text" name="prenom" placeholder="Prénom" required className="form-control form-custom" />
-    </div>
+                <div className="col-md-6">
+                  <input type="text" name="prenom" placeholder="Prénom" required className="form-control form-custom" />
+                </div>
 
-    <div className="col-12">
-      <input type="email" name="email" placeholder="Email" required className="form-control form-custom" />
-    </div>
+                <div className="col-12">
+                  <input type="email" name="email" placeholder="Email" required className="form-control form-custom" />
+                </div>
 
-    <div className="col-12">
-      <input type="tel" name="telephone" placeholder="Téléphone" className="form-control form-custom" />
-    </div>
+                <div className="col-12">
+                  <input type="tel" name="telephone" placeholder="Téléphone" required className="form-control form-custom" />
+                </div>
 
-    <div className="col-12">
-      <textarea name="message" rows={4} placeholder="Votre message..." required className="form-control form-custom"></textarea>
-    </div>
+                <div className="col-12">
+                  <textarea name="message" rows={4} placeholder="Votre message..." required className="form-control form-custom"></textarea>
+                </div>
 
-    <div className="col-12 text-center">
-      <button type="submit" className="btn btn-primary px-5 py-2 mt-2">
-        Envoyer le message
-      </button>
-    </div>
-  </div>
-</form>
-          </div>
-        </section>
+                <div className="col-12 text-center">
+                  <button
+                    type="submit"
+                    className="btn btn-primary px-5 py-2 mt-2"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? 'Envoi en cours...' : 'Envoyer via WhatsApp'}
+                  </button>
+                </div>
+              </div>
+            </form>
+</div>
+</section>
 
       </main>
 

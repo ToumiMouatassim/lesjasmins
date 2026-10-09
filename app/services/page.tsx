@@ -76,7 +76,7 @@ export default function ServicesDetailsPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-2 text-white fs-18"
           >
-            Découvrez l'étendue de nos services médicaux, conçus pour répondre à tous vos besoins de santé.
+            Découvrez l&apos;étendue de nos services médicaux, conçus pour répondre à tous vos besoins de santé.
           </motion.p>
         </motion.div>
       </section>

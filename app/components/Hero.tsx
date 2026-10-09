@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import NextLink from './NextLink';
-import Image from 'next/image';
 
 const Hero: FC = () => {
   return (

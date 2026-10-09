@@ -45,6 +45,7 @@ export default function AutoLoginPage() {
         }
 
         // 3️⃣ Redirection vers Laravel (route WEB)
+        // eslint-disable-next-line @next/next/no-location-assign-relative-destination
         window.location.href = `${API}/dashboard`;
       } catch (error) {
         console.error(error);

@@ -18,12 +18,12 @@ const Topbar: FC = () => {
             <NextLink href="tel:+212523425820" title="Nous sommes là pour vous 24/24h." />
           </div>
            <div className="d-flex align-items-center ">
-            <NextLink href="mailto:cliniquelesjasminss@gmail.com" title="" className="uil uil-envelope fs-22 me-2 text-white"/>
+            <NextLink href="mailto:hopitalprivelesjasmins@gmail.com" title="" className="uil uil-envelope fs-22 me-2 text-white"/>
             <a
-              href="mailto:cliniquelesjasminss@gmail.com"
+              href="mailto:hopitalprivelesjasmins@gmail.com"
               className="d-flex align-items-center link-white fw-semibold text-white d-none d-lg-inline"
             >
-              cliniquelesjasminss@gmail.com
+              hopitalprivelesjasmins@gmail.com
             </a>
           </div>
 
@@ -39,8 +39,8 @@ const Topbar: FC = () => {
           </div>
            <div className="d-flex align-items-center gap-2 mt-1.5 mt-md-0">
             {[
-              { href: "https://www.facebook.com/", icon: "facebook", label: "Facebook" },
-              { href: "https://www.instagram.com/", icon: "instagram", label: "Instagram" },
+              { href: "https://web.facebook.com/profile.php?id=61594540775296", icon: "facebook", label: "Facebook" },
+              { href: "https://www.instagram.com/hopitalprive_lesjasmins/", icon: "instagram", label: "Instagram" },
               { href: "https://api.whatsapp.com/send?phone=212668091193", icon: "whatsapp", label: "WhatsApp" },
             ].map(({ href, icon, label }) => (
             <Link

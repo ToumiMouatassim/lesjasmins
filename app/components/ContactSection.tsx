@@ -2,6 +2,7 @@
 
 import { useState, ChangeEvent, FormEvent } from 'react';
 import PopUpAlert from './PopUpAlert';
+import { submitForm } from '../lib/email';
 
 interface FormData {
   nom: string;
@@ -24,53 +25,47 @@ const ContactSection: React.FC = () => {
     message: '',
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
 
-  const subject = formData.sujet || 'Message depuis le site web';
-
-  const body = `
-    Nom : ${formData.nom}
-    Email : ${formData.email}
-
-    Message :
-    ${formData.message}
-      `;
-
-      const mailtoLink = `mailto:cliniquelesjasminss@gmail.com?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(body)}`;
-
-       window.location.href = mailtoLink;
-
-       setTimeout(() => {
-        window.open(
-          `https://mail.google.com/mail/?view=cm&fs=1&to=cliniquelesjasminss@gmail.com&su=${encodeURIComponent(
-            subject
-          )}&body=${encodeURIComponent(body)}`,
-          '_blank'
-        );
-      }, 1000);
+    try {
+      await submitForm('contact', {
+        nom: formData.nom,
+        email: formData.email,
+        sujet: formData.sujet || 'Message depuis le site web',
+        message: formData.message,
+      });
 
       setPopup({
         show: true,
         type: 'success',
-        message: '📧 Votre message est prêt à être envoyé.',
+        message: '📧 Votre message a bien été envoyé.',
       });
 
-       setFormData({
+      setFormData({
         nom: '',
         email: '',
         sujet: '',
         message: '',
       });
-
-      setTimeout(() => setPopup({ ...popup, show: false }), 4000);
+    } catch (error) {
+      setPopup({
+        show: true,
+        type: 'error',
+        message: error instanceof Error ? error.message : "Une erreur est survenue.",
+      });
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => setPopup({ ...popup, show: false }), 5000);
+    }
   };
 
 
@@ -163,8 +158,9 @@ const ContactSection: React.FC = () => {
                       borderRadius: '3px',
                       padding: '10px 40px',
                     }}
+                    disabled={isLoading}
                   >
-                    Envoyer le message
+                    {isLoading ? 'Envoi en cours...' : 'Envoyer le message'}
                   </button>
                 </div>
               </div>

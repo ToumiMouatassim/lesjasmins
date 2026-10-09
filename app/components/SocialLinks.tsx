@@ -8,8 +8,8 @@ interface SocialLinkItem {
 }
 
 const links: SocialLinkItem[] = [
-  { id: 1, icon: "uil uil-facebook-f", url: "https://www.facebook.com/" },
-  { id: 2, icon: "uil uil-instagram", url: "https://www.instagram.com/" },
+  { id: 1, icon: "uil uil-facebook-f", url: "https://web.facebook.com/profile.php?id=61594540775296" },
+  { id: 2, icon: "uil uil-instagram", url: "https://www.instagram.com/hopitalprive_lesjasmins/" },
   { id: 3, icon: "uil uil-whatsapp", url: "https://api.whatsapp.com" },
 ];
 

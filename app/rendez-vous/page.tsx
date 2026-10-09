@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import NextLink from '../components/NextLink';
+import { submitForm } from '../lib/email';
 import { servicesList } from '@/data/data';
 import {
   format,
@@ -123,6 +124,7 @@ const AppointmentWithCalendar: React.FC = () => {
   const [phone, setPhone] = useState('');
   const [service, setService] = useState('');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const whatsappNumber = '212668091193';
 
@@ -172,10 +174,10 @@ ${message}
       return false;
     }
 
-    // if (email && !isValidEmail(email)) {
-    //   showPopup('Email invalide !');
-    //   return false;
-    // }
+    if (email && !isValidEmail(email)) {
+      showPopup('Email invalide !');
+      return false;
+    }
 
     if (!isValidPhone(phone)) {
       showPopup('Téléphone invalide (au moins 8 chiffres) !');
@@ -195,22 +197,37 @@ ${message}
     window.open(url, '_blank');
   };
 
-  const sendEmail = () => {
+  const sendEmail = async () => {
     if (!validate()) return;
 
-    const subject = 'Nouveau rendez-vous';
-    const body = buildMessage();
-    window.location.href = `mailto:cliniquelesjasminss@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-  };
+    setIsLoading(true);
 
-  const sendBoth = () => {
-    if (!validate()) return;
-    sendWhatsApp();
-    setTimeout(() => {
-      sendEmail();
-    }, 500);
+    try {
+      await submitForm('appointment', {
+        nom: name,
+        email,
+        telephone: phone,
+        service,
+        date: selectedDate ? format(selectedDate, 'yyyy-MM-dd') : '',
+        message,
+      });
+
+      showPopup('✅ Votre demande de rendez-vous a bien été envoyée.');
+      setName('');
+      setEmail('');
+      setPhone('');
+      setService('');
+      setMessage('');
+      setSelectedDate(null);
+    } catch (error) {
+      showPopup(
+        error instanceof Error
+          ? error.message
+          : 'Une erreur est survenue lors de l\'envoi.'
+      );
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return(
@@ -279,10 +296,12 @@ ${message}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
+                type="tel"
                 className="form-control mb-3"
                 placeholder="Téléphone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
+                required
               />
               <select
                 className="form-control mb-3"
@@ -291,7 +310,9 @@ ${message}
               >
                 <option value="">Choisir un service</option>
                 {servicesList.map((s) => (
-                  <option key={s.id}>{s.title}</option>
+                  <option key={s.id} value={s.title}>
+                    {s.title}
+                  </option>
                 ))}
               </select>
               <textarea
@@ -305,6 +326,7 @@ ${message}
                   type="button"
                   onClick={sendWhatsApp}
                   className="btn btn-success"
+                  disabled={isLoading}
                 >
                   Envoyer via WhatsApp
                 </button>
@@ -312,8 +334,9 @@ ${message}
                   type="button"
                   onClick={sendEmail}
                   className="btn btn-primary"
+                  disabled={isLoading}
                 >
-                  Envoyer via Email
+                  {isLoading ? 'Envoi en cours...' : 'Envoyer via Email'}
                 </button>
                 {/* <button
                   type="button"

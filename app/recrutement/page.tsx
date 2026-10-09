@@ -2,6 +2,7 @@
 
 import { Fragment, useState, ChangeEvent, FormEvent } from 'react';
 import NextLink from '../components/NextLink';
+import { submitForm } from '../lib/email';
 
 interface FormData {
   nom: string;
@@ -40,59 +41,58 @@ const Recrutement: React.FC = () => {
     message: '',
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
 
-  const subject = `Nouvelle candidature – ${formData.poste}`;
-
-  const body = `
-    Nom: ${formData.nom}
-    Prénom: ${formData.prenom}
-    Email: ${formData.email}
-    Téléphone: ${formData.telephone}
-    Poste: ${formData.poste}
-
-    Expérience:
-    ${formData.experience}
-
-    Formation:
-    ${formData.education}
-
-    Compétences:
-    ${formData.competences}
-
-    Motivation:
-    ${formData.motivation}
-      `;
-
-      const mailtoLink = `mailto:recrutement@clinique.com?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(body)}`;
-
-       window.location.href = mailtoLink;
-
-       setTimeout(() => {
-        window.open(
-          `https://mail.google.com/mail/?view=cm&fs=1&to=recrutement@clinique.com&su=${encodeURIComponent(
-            subject
-          )}&body=${encodeURIComponent(body)}`,
-          '_blank'
-        );
-      }, 1000);
+    try {
+      await submitForm('recruitment', {
+        nom: formData.nom,
+        prenom: formData.prenom,
+        email: formData.email,
+        telephone: formData.telephone,
+        poste: formData.poste,
+        experience: formData.experience,
+        education: formData.education,
+        competences: formData.competences,
+        motivation: formData.motivation,
+      });
 
       setPopup({
         show: true,
         type: 'success',
-        message: '✅ Votre candidature est prête à être envoyée.',
+        message: '✅ Votre candidature a bien été envoyée.',
       });
 
-      setTimeout(() => setPopup({ ...popup, show: false }), 4000);
-    };
+      setFormData({
+        nom: '',
+        prenom: '',
+        email: '',
+        telephone: '',
+        poste: '',
+        experience: '',
+        education: '',
+        competences: '',
+        motivation: '',
+      });
+    } catch (error) {
+      setPopup({
+        show: true,
+        type: 'error',
+        message: error instanceof Error ? error.message : "Une erreur est survenue.",
+      });
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => setPopup({ ...popup, show: false }), 5000);
+    }
+  };
 
 
   return (
@@ -147,8 +147,12 @@ const Recrutement: React.FC = () => {
                     ))}
 
                     <div className="col-12 text-center mt-3">
-                      <button type="submit" className="btn btn-md secondary-bg text-white rounded">
-                        Soumettre ma candidature
+                      <button
+                        type="submit"
+                        className="btn btn-md secondary-bg text-white rounded"
+                        disabled={isLoading}
+                      >
+                        {isLoading ? 'Envoi en cours...' : 'Soumettre ma candidature'}
                       </button>
                     </div>
                   </div>

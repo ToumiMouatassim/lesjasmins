@@ -4,9 +4,6 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const LETTER_DELAY = 0.025;
-const BOX_FADE_DURATION = 0.125;
-const FADE_DELAY = 5;
-const MAIN_FADE_DURATION = 0.25;
 const SWAP_DELAY_IN_MS = 5500;
 
 interface TypewriteProps {
@@ -17,7 +14,7 @@ export const SupportSection: React.FC = () => {
   return (
     <section className="relative overflow-hidden text-white py-10" style={{backgroundColor : "#8BBB44"}}>
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-[#5CB85C] via-[#8BBB44] to-[#B2D235] opacity-20"
+        className="absolute inset-0 bg-linear-to-r from-[#5CB85C] via-[#8BBB44] to-[#B2D235] opacity-20"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 0.3, scale: 1 }}
         transition={{ duration: 2, ease: "easeOut" }}

@@ -16,7 +16,7 @@ const Banner: FC<BannerProps> = ({ alt, imageName, btnColor = 'danger', video = 
       {video && (
         <Link
           data-glightbox
-          href="/img/hero-bg.mp4"
+          href="/img/herovid-bg.mp4"
           className={`btn btn-circle btn-${btnColor} btn-play ripple mx-auto mb-5 position-absolute`}
           style={{
             top: '50%',

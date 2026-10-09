@@ -1,7 +1,8 @@
 "use client";
 
 import { FC } from "react";
-import { Stethoscope, HeartPulse, Syringe, Hospital } from "lucide-react";
+import { Stethoscope, HeartPulse, Hospital, Eye } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -23,10 +24,10 @@ const services = [
     icon: <HeartPulse size={65} color="#EC4899" />,
   },
   {
-    title: "Vaccination",
+    title: "Ophtalmologie",
     description:
-      "Service de vaccination pour enfants et adultes par des professionnels qualifiés.",
-    icon: <Syringe size={65} color="#10B981" />,
+      "Consultations et soins visuels, examens de la vue et prise en charge des troubles oculaires.",
+    icon: <Eye size={65} color="#8B5CF6" />,
   },
 ];
 
@@ -42,11 +43,9 @@ const ServicesSection: FC = () => {
         <div className="row mt-5 g-4">
           {services.map((service, index) => (
             <div className="col-md-6" key={index}>
-              <div
-                className="service-card p-4 rounded shadow-sm h-100 text-center"
-                role="button"
-                style={{ cursor: "pointer" }}
-                onClick={() => (window.location.href = "/services")}   
+              <Link
+                href="/services"
+                className="service-card p-4 rounded shadow-sm h-100 text-center d-block"
               >
                 <div className="icon mb-4">{service.icon}</div>
 
@@ -55,7 +54,7 @@ const ServicesSection: FC = () => {
                 </h3>
 
                 <p className="text-muted">{service.description}</p>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

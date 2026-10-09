@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, FC } from "react";
 
 const PageProgress: FC = () => {

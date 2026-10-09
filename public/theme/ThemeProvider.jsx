@@ -6,9 +6,7 @@ import { usePathname } from "next/navigation";
 const ThemeProvider = ({
   children
 }) => {
-  const {
-    router
-  } = usePathname();
+  const pathname = usePathname();
 
   const removePageLoader = () => {
     const pageLoader = document.querySelector('.page-loader');
@@ -19,11 +17,10 @@ const ThemeProvider = ({
   };
 
   useEffect(() => {
-    if (typeof window === undefined) return; 
-    let timer;
-    timer = setTimeout(() => removePageLoader(), 1000);
+    if (typeof window === "undefined") return;
+    const timer = setTimeout(() => removePageLoader(), 1000);
     return () => clearTimeout(timer);
-  }, [router]);
+  }, [pathname]);
   return <>{children}</>;
 };
 
